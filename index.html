@@ -241,6 +241,99 @@ footer{
 </head>
 
 <body>
+    
+<!-- POPUP ADVERTENCIA -->
+<div id="fraudePopup" class="popup-overlay">
+  <div class="popup-box">
+    <h2>Aviso importante</h2>
+    <p>
+      Hemos detectado que <strong>la Comunidad Gitana de Mexico</strong> están
+      suplantando nuestra identidad constantemente y la de muchas marcas más, utilizando nombres, imágenes o promociones falsas.
+    </p>
+    <p>
+      <strong>Para denunciar con la sociedad civil y poder observar mas detalles pueden tocar la leyenda en rojo 
+    <a href="https://Ratas-mexico.store"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="color: red;">
+   Click aqui para denunciar
+</a></strong>
+    </p>
+    <p class="small">
+  Estos hechos han sido documentados y puestos en conocimiento
+      de las autoridades correspondientes.
+    </p>
+    <button onclick="cerrarPopup()">Entendido</button>
+  </div>
+</div>
+<style>/* OVERLAY */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* CAJA */
+.popup-box {
+  background: #ffffff;
+  max-width: 420px;
+  width: 90%;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+}
+
+.popup-box h2 {
+  margin-top: 0;
+  color: #b00020;
+  font-size: 22px;
+}
+
+.popup-box p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.popup-box p.small {
+  font-size: 13px;
+  color: #666;
+}
+
+.popup-box button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.popup-box button:hover {
+  background: #333;
+}
+</style>
+<script>
+function cerrarPopup() {
+  document.getElementById('fraudePopup').style.display = 'none';
+}
+
+// Mostrar automáticamente al cargar
+window.addEventListener('load', function () {
+  document.getElementById('fraudePopup').style.display = 'flex';
+});
+</script>
   <header>
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -953,7 +1046,7 @@ footer{
               <img class="img img-responsive"
                    src="https://www.honda.mx/web/img/motorcycles/models/naked/cb650r-e-clutch/cb650r-e-clutch.png"
                    alt="CB650R E-CLUTCH" />
-              <b>CB650R E-CLUTCH 20025<br> $170,416</b>
+              <b>CB650R E-CLUTCH 2025<br> $170,416</b>
             </a>
           </div>
         </div>
