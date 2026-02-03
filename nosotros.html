@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class='no-js' lang='es'>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <title>Honda de Mexico</title> 
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#393C3E">
+  <link data-turbolinks-track="true" href="cms/assets/application.css" media="all" rel="stylesheet" />
+  <link rel="icon" href="favi.png">
+  <script src="cms/assets/application.js"></script>
+  <script src="cms/assets/imageReplace.js"></script>
+  <link href="css/main.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet" />
+  <script src="cms/assets/responsiveslides.js"></script> 
+
+<style>
+  a{color: white;
+
+  }
+  footer{
+     background:black;
+  
+    text-align: center;
+  }
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: top;
+    margin-top: 5px;
+    align-items: top;
+}
+ 
+ .contenedor1{
+    position: relative;
+    display: inline-block;
+    text-align: top;
+    margin-top: 15px;
+    align-items: right;
+}
+
+.centrado{
+    position: absolute;
+    top: 30px;
+    left: 40%;
+    transform: translate(-30%, -40%);
+    color:white;
+
+
+}
+.centrado1{
+    position: absolute;
+    top: 25px;
+    left: 20%;
+    transform: translate(-10%, -10%);
+    color: black;
+    margin-top: 1px;
+
+}
+.container3{
+  color: white;
+  left: 50%;
+  text-align: center;
+ background: linear-gradient( #e02b20, #670a01);  
+ margin-top: 14px; 
+}
+.grid-4-secciones{
+  max-width:1400px;
+  margin:60px auto;
+  padding:0 20px;
+
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:30px;
+}
+
+.grid-item{
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.grid-item p,
+.grid-item b,
+.grid-item h1{
+  margin:0;
+}
+
+.grid-item.noticia{
+  background:#fff;
+  padding:30px;
+  box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+/* Mobile */
+@media(max-width:900px){
+  .grid-4-secciones{
+    grid-template-columns:1fr;
+  }
+}
+.contenedor4{
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    align-items: center;
+    background-color: #53905b;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+  .redes-flotantes {
+position: fixed;
+right: 8px;
+top: 90%;
+z-index: 20;
+max-width: 80px;
+
+}
+.redes-flotantes img {        max-width: 75%;
+
+float: right; clear: right;
+ margin: 5px;
+-moz-transform: scale(.8) ;
+-webkit-transform: scale(.8) ;
+-o-transform: scale(.8) ;
+-ms-transform: scale(.8) ;
+transform: scale(.8) ;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+/* =========================
+   BARRA DE PAGOS
+========================= */
+/* --- FIX BARRA DE PAGOS EN MÓVIL --- */
+.payment-bar {
+  flex-wrap: wrap;              /* permite bajar a otra línea */
+  padding: 10px 5px;
+}
+
+.payment-bar img {
+  width: 70px;                 /* más pequeño en móvil */
+  margin: 5px;
+}
+
+/* Ajuste fino solo para pantallas chicas */
+@media (max-width: 480px) {
+  .payment-bar {
+    gap: 10px;
+  }
+
+  .payment-bar img {
+    width: 60px;
+  }
+}
+
+</style>
+</head>
+<body>
+ <header>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#navbarMainCollapse"
+                style="margin-top:8px;">
+          <span class="sr-only">Interruptor de Navegación</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="honda.svg" style="max-height:100px;">
+        </a>
+      </div>
+      <div id="navbarMainCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right" style="margin-top:10px;">
+          <li><a href="nosotros.html">Inicio</a></li>
+          <li><a href="index.html">Motos</a></li>
+          <li><a href="autos.html">Autos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="cotizador.html">Cotizador</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- SUB NAVBAR -->
+  <nav class="navbar-inverse sub-navbar">
+    <div class="container3">
+      <p style="margin:0;">
+        <strong style="font-size:32px;">PLANTA EL SALTO</strong>
+      </p>
+    </div>
+  </nav>
+</header><br><br>
+
+<div class="contenedor" width="100%" >
+  <img src="cms/banner.jpg" width="100%" >
+  <div class="centrado"><h2 > </h2>
+</div>
+
+
+<div class="grid-4-secciones">
+
+  <!-- 1 -->
+  <section class="grid-item">
+    <b>
+      <p style="text-align: center;background:#a2d7e8;font-size: 25px;">
+        El compromiso ambiental<br>
+        de <span class="rojas" style="color:#ff0000;">Honda</span>
+      </p>
+    </b>
+
+    <div class="contenedor4">
+      <b>Componentes y connotaciones del símbolo ambiental global</b><br><br>
+      <img src="cms/banner4.png" width="100%">
+      <b>
+        El símbolo que Honda utiliza, alrededor del mundo, fue creado para transmitir,
+        de manera gráfica, nuestro lema ambiental: Blue Skies for Our Children,
+        el cual combina el texto del lema corporativo y los gráficos que lo integran.
+      </b>
+    </div>
+  </section>
+
+  <!-- 2 -->
+<section><b><p style="background-color: #53addb;padding-right: 25px;padding-left: 25px;padding-bottom: 25px;padding-top: 25px;">
+
+Símbolo y lema ambiental global <br><br>
+
+Como miembro responsable de la comunidad, Honda se esfuerza por contribuir a la salud y la preservación del medio ambiente, en todas y cada una de sus actividades. Además, está comprometida a introducir tecnología ambiental de punta para lograr emisiones más limpias, mejorar la economía de combustible y aplicar fuentes de energía alternativas para toda su línea de productos.
+<br><br>
+En Honda hemos adoptado, como lema ambiental corporativo, la frase «Blue Skies for Our Children» con el objetivo de inspirar a nuestra compañía a alcanzar el objetivo de reducir las emisiones de dióxido de carbono (CO2), tanto en nuestros productos como en los procesos y operaciones que se llevan a cabo en nuestras diversas plantas en todo el mundo. <br><br>
+</p></b></section>
+
+  </section>
+
+  <!-- 3 -->
+<section><b><p style="background-color: #f7d167;padding-right: 25px;padding-left: 25px;padding-bottom: 25px;padding-top: 25px;">
+Lema global ambiental de Honda “Blue Skies for Our Children” <br><br>
+
+Cuando los ingenieros de Honda aceptaron, en 1970, el gran reto de cumplir con los más estrictos estándares de emisiones establecidos por el gobierno de los Estados Unidos de Norteamérica, crearon la frase «Blue Skies for Our Children», la cual utilizaron como grito de guerra para comprometer todos sus esfuerzos a la obtención de este objetivo.
+<br><br>
+De esta forma, en Honda, deseamos transferir la alegría y libertad de la movilidad, a las próximas generaciones (nuestros niños), por medio de contribuir a la creación de una sociedad sustentable en donde las personas puedan disfrutar de la vida (cielos azules). Actualmente, con este lema, deseamos representar la pasión que tiene Honda hacia el compromiso ambiental, que hemos establecido desde la fundación de nuestra marca y que no vacilaremos en alcanzar a futuro.
+ <br><br>
+</p></b></section>
+
+  <!-- 4 -->
+
+<section style="text-align: center;margin-left: 15%;margin-right: 15%;margin-top: 15%;margin-bottom: 15%;">
+<h1>Honda promete apoyo para el auxilio en el terremoto de Turquía y Siria</h1>
+<br>
+TOKIO, Japón. 20 de febrero de 2023.- Honda desea expresar su más sentido pésame y condolencias a las víctimas del terremoto del 6 de febrero de 2023 que azotó un área cercana a la frontera turco-siria. 
+<br>
+En respuesta a esta tragedia, Honda Motor Co., Ltd. donará 10 millones de yenes a la Sociedad de la Cruz Roja Japonesa para apoyar el esfuerzo de recuperación y ayuda humanitaria en las áreas afectadas.
+<br>
+Honda Motor Europe Ltd., y Honda Turkiye AS donarán, además, más de 200 generadores eléctricos, así como productos esenciales para satisfacer las necesidades más urgentes. 
+<br>
+Asimismo, las oficinas de Honda en EE. UU., a saber, American Honda Motor Co., Inc., y Honda Development and Manufacturing of America, LLC, ya comenzaron a recibir donaciones de asociados de Honda y las compañías planean aumentar la donación como empresa. 
+<br>
+Honda espera sinceramente que ambos países afectados se recuperen lo antes posible.
+<br>
+</section>
+</div>
+
+
+<div class="contenedor1" width="100%" >
+  <img src="cms/banner1.jpg" width="100%" >
+ 
+</div>
+
+<section style="text-align: center;margin-left: 15%;margin-right: 15%;margin-top: 15%;margin-bottom: 15%;">
+
+
+<h1>Acerca de Honda de México</h1><br><br>
+
+Cuenta con dos centros de producción ubicados en Celaya, Guanajuato, y El Salto, Jalisco; en donde se producen motores, transmisiones, motocicletas, productos de fuerza y el vehículo HR-V® para el mercado nacional y de exportación a diversos países del mundo. Honda® ofrece una completa línea de vehículos confiables, eficientes en consumo de combustible y divertidos de manejar, con avanzadas tecnologías de seguridad, comercializados a través de una amplia red de distribuidores. La línea de vehículos incluye los automóviles Honda City®, Civic®, Insight® y Accord®; así como las SUVs BR-V®, HR-V®, CR-V® y Honda Pilot®; y la minivan Odyssey®. 
+
+</section>
+
+<footer>
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="honda.svg" style="max-width:150px;padding-top: 20%;">
+        </div>
+        <div class="col-sm-3" style="text-align:center;padding-top: 5px;">
+          <b>
+            <br><a href="aviso.html" style="color:white;">Aviso de privacidad</a>
+            <br><a href="terminos.html" style="color:white;">Términos y Condiciones</a>
+            <br><a href="contacto.html" style="color:white;">Contáctanos</a>
+          </b>
+        </div>
+        <div class="col-sm-3" style="text-align:center;margin-top:5px;color:white;">
+          <br>
+          <a href="mailto:ventas@ensambladorahonda.com" style="color:white;">
+            ventas@ensambladorahonda.com
+          </a>
+          <br>
+          <b>Whatsapp:</b> 33 2101 4178<br>
+          <b>Teléfono:</b> 55 9317 8433<br><br>
+          <p>
+            Parque Industrial, Carretera a El Castillo 7250,
+            45680 El Salto, Jalisco, México
+          </p>
+        </div>
+        <div class="col-sm-4" style="text-align:center;">
+          <img src="mm.png" style="max-width:250px;padding-top:10%;">
+        </div>
+      </div>
+    </div>
+    <div class="payment-bar">
+      <img src="visa.png">
+      <img src="master.png">
+      <img src="spei.png">
+      <img src="oxxo.png">
+    </div>
+    <nav style="background:linear-gradient(#e02b20,#670a01);color:white;text-align:center;">
+      <b>Todos los derechos reservados<br>2026</b>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="cms/assets/paginator.js"></script>
+<script src="cms/assets/paginate.js"></script>
+<script src="cms/assets/paginate-content.js"></script>
+<link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet"/>
+<script src="cms/assets/responsiveslides.js"></script>
+<div class='redes-flotantes'>
+<div class="btn-whatsapp">
+<a href="https://wa.me/message/S6MNX4S7PMGHP1">
+<img src="w.png" alt="">
+</a>
+</div>
+</body>
+</html>

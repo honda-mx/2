@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html class='no-js' lang='es'>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <title>Honda de Mexico</title> 
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#393C3E">
+  <link data-turbolinks-track="true" href="cms/assets/application.css" media="all" rel="stylesheet" />
+  <link rel="icon" href="favi.png">
+  <script src="cms/assets/application.js"></script>
+  <script src="cms/assets/imageReplace.js"></script>
+  <link href="css/main.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet" />
+  <script src="cms/assets/responsiveslides.js"></script>        
+<style>
+
+
+.caracteristicas-linea{
+  font-size: 16px;
+}
+
+.caracteristicas-linea .sep{
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+  .btn-buy {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: #670a01;
+  color: #fff;
+
+  padding: 10px 22px;
+  border-radius: 999px; /* pastilla real */
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.btn-buy i {
+  font-size: 16px;
+}
+
+.btn-buy:hover {
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-buy:active {
+  transform: translateY(0);
+}
+
+  .redes-flotantes {
+position: fixed;
+right: 8px;
+top: 90%;
+z-index: 20;
+max-width: 80px;
+
+}
+.redes-flotantes img {        max-width: 75%;
+
+float: right; clear: right;
+ margin: 5px;
+-moz-transform: scale(.8) ;
+-webkit-transform: scale(.8) ;
+-o-transform: scale(.8) ;
+-ms-transform: scale(.8) ;
+transform: scale(.8) ;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+/* =========================
+   BARRA DE PAGOS
+========================= */
+/* --- FIX BARRA DE PAGOS EN MÓVIL --- */
+.payment-bar {
+  flex-wrap: wrap;              /* permite bajar a otra línea */
+  padding: 10px 5px;
+}
+
+.payment-bar img {
+  width: 70px;                 /* más pequeño en móvil */
+  margin: 5px;
+}
+
+/* Ajuste fino solo para pantallas chicas */
+@media (max-width: 480px) {
+  .payment-bar {
+    gap: 10px;
+  }
+
+  .payment-bar img {
+    width: 60px;
+  }
+}
+
+
+/* =========================
+   GENERALES
+========================= */
+hr {
+  border-color: black;
+}
+
+footer {
+  background: black;
+  text-align: center;
+}
+
+.container4 {
+  margin-right: 15%;
+  margin-left: 15%;
+  text-align: center;
+}
+
+.container3 {
+  color: white;
+  text-align: center;
+  background: linear-gradient(#e02b20, #670a01);
+  margin-top: 14px;
+}
+
+.container5 {
+  margin-top: 10%;
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align: center;
+}
+
+.interior h2,
+.interior h3,
+.interior h4,
+.interior p,
+.pagina h2,
+.pagina h3,
+.pagina h4,
+.pagina p {
+  margin-bottom: 17px;
+}
+
+/* =========================
+   ICONOS / CONTROLES
+========================= */
+.item-control i {
+  background: #fff;
+  color: #f00;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+.recommended-item-control i {
+  background: #bc955c;
+  color: #fff;
+  font-size: 20px;
+  padding: 4px 10px;
+}
+
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================
+   TABS
+========================= */
+.nav-tabs li.active a,
+.nav-tabs li.active a:hover,
+.nav-tabs li.active a:focus {
+  background-color: #bc955c;
+  border: 0;
+  color: #fff;
+}
+
+.nav-tabs > li > a {
+  background-color: #0c231e;
+  border: 1px solid #d5d5d5;
+  color: #fff;
+  font-size: 16px;
+}
+
+.nav > li > a:hover {
+  background-color: #eeeeee;
+}
+
+
+
+.navbar-brand {
+  padding: 5px 10px;
+  height: auto;
+}
+
+.navbar-brand img {
+  height: 55px;      /* AJUSTA AQUÍ */
+  width: auto;
+  max-height: none;  /* evita que Bootstrap lo aplaste */
+}
+
+/* =========================
+   ICONO + / − COLLAPSE (FIX REAL)
+========================= */
+/* ICONO + / − PURO CSS */
+/* ICONO + / − PURO CSS (BOOTSTRAP 3 REAL) */
+.icon-toggle {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  margin-top: 3px;
+}
+
+/* línea horizontal */
+.icon-toggle::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 14px;
+  height: 2px;
+  background: #000;
+}
+
+/* línea vertical (para +) */
+.icon-toggle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 6px;
+  width: 2px;
+  height: 14px;
+  background: #000;
+}
+
+/* ABIERTO → −  (cuando NO tiene .collapsed) */
+.panel-title a:not(.collapsed) .icon-toggle::after {
+  opacity: 0;
+}
+
+
+</style>
+       
+</head>
+<body>
+ <header>
+
+  <!-- NAVBAR PRINCIPAL -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#navbarMainCollapse"
+                style="margin-top:8px;">
+          <span class="sr-only">Interruptor de Navegación</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="index.html">
+          <img src="honda.svg" style="max-height:100px;">
+        </a>
+      </div>
+
+      <div id="navbarMainCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right" style="margin-top:10px;">
+          <li><a href="nosotros.html">Inicio</a></li>
+          <li><a href="index.html">Motos</a></li>
+          <li><a href="autos.html">Autos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="cotizador.html">Cotizador</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- SUB NAVBAR -->
+  <nav class="navbar-inverse sub-navbar">
+    <div class="container3">
+      <p style="margin:0;">
+        <strong style="font-size:32px;">PLANTA EL SALTO</strong>
+      </p>
+    </div>
+  </nav>
+
+</header>
+
+<main class="inner-page interior ficha">
+  <div class="container">
+   <div class="col-sm-12" style="text-align:center;padding-top: 20px;">    
+    
+ <br><br>
+    <div class="">
+      
+      <div class="marquee-padding">
+     
+
+      <section>
+  <div class="col-md-7 col-xs-12 col-sm-12 pull-left" tabindex="0">
+    <div class="col-sm-12  padding-left">
+      <div class="product-details"><!--product-details-->
+            <div class="col-sm-6">
+              <div class="view-product"class="img img-responsive">
+                <img src="1/xrl1.png" class="img img-responsive">
+              </div>
+              <div id="similar-product" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                  <div class="item active">
+                     <a href="1/xrl2.png"><img src="1/xrl2.png"></a>
+                      </div>
+                  <div class="item ">
+                      <a href="1/xrl3.png"><img src="1/xrl3.png"></a>
+                    </div>              
+                  <div class="item ">
+                      <a href="1/xrl4.jpg"><img src="1/xrl4.jpg"></a>
+                    </div>
+                  <div class="item ">
+                      <a href="1/xrl5.jpg"><img src="1/xrl5.jpg"></a>
+                    </div>
+                  <div class="item ">
+                      <a href="1/xrl6.jpg"><img src="1/xrl6.jpg"></a>
+                      </div>
+                  <div class="item ">
+                      <a href="1/xrl7.jpg"><img src="1/xrl7.jpg"></a>
+                    </div>              
+         
+                                               
+                  </div>  <!-- Wrapper for slides -->
+                  <!-- Controls -->
+                  <a class="left item-control" href="#similar-product" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+                  </a>
+                  <a class="right item-control" href="#similar-product" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+                  </a>
+              </div>
+            </div>
+            <div class="col-sm-6 "><!--/product-information-->
+              <div class="product-information">
+             <h3>XR150L
+ </h3>
+             <span><h4>MXN $40,819</h4></span><br>
+               <a href="solicitud.html" class="btn-buy">
+  <i class="fa fa-shopping-cart"></i> Comprar
+</a>
+<br>
+                <b><br>Color:</b> Negro, Blanco y Rojo 
+                <b><br>Cilindraje:</b> 149.2 cc
+                <b><br>Caballos de fuerza:</b> 12.3 Hp   
+                           </div>
+                            </div> <!--/product-information-->
+     </div>
+    </div>
+  </div>
+</section>
+
+     </div>
+<div class="col-md-4 col-xs-12 pull-right" style="text-align:left;">
+
+  <div class="panel-group category-products" id="accordian" style="margin-bottom:10px;">
+    <br><br>
+
+    <!-- MOTOR -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordian" href="#motor">
+            <span class="pull-right icon-toggle"></span>Motor
+          </a>
+        </h4>
+      </div>
+      <div id="motor" class="panel-collapse collapse">
+        <b>Tipo:</b> 4 tiempos, monocilíndrico, SOHC, 2 válvulas<br><br>
+        <b>Cilindrada:</b> 149.2 cc<br><br>
+        <b>Potencia:</b> 12.3 Hp / 7,750 rpm<br><br>
+        <b>Torque:</b> 13.0 N.m / 6,000 rpm<br><br>
+        <b>Transmisión:</b> 5 velocidades tipo retorno<br><br>
+        <b>Sistema de enfriamiento:</b> Por aire natural<br><br>
+        <b>Sistema de lubricación:</b> Forzada por bomba trocoidal con cárter húmedo
+        <hr>
+      </div>
+    </div>
+
+    <!-- SISTEMA DE IGNICIÓN -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordian" href="#ignicion">
+            <span class="pull-right icon-toggle"></span>Sistema de ignición
+          </a>
+        </h4>
+      </div>
+      <div id="ignicion" class="panel-collapse collapse">
+        <b>Sistema de encendido:</b> Eléctrico<br><br>
+        <b>Sistema de arranque:</b> Pedal de arranque
+        <hr>
+      </div>
+    </div>
+
+    <!-- SUSPENSIÓN Y FRENOS -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordian" href="#suspension">
+            <span class="pull-right icon-toggle"></span>Suspensión y frenos
+          </a>
+        </h4>
+      </div>
+      <div id="suspension" class="panel-collapse collapse">
+        <b>Suspensión delantera:</b> Horquillas telescópicas, 160 mm de carrera<br><br>
+        <b>Suspensión trasera:</b> Brazo oscilante con amortiguador central, 152 mm de carrera<br><br>
+        <b>Freno delantero:</b> Disco hidráulico sencillo de 240 mm (2 pistones)<br><br>
+        <b>Freno trasero:</b> Tambor mecánico de 110 mm
+        <hr>
+      </div>
+    </div>
+
+    <!-- MEDIDAS Y PESO -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordian" href="#medidas">
+            <span class="pull-right icon-toggle"></span>Medidas y peso
+          </a>
+        </h4>
+      </div>
+      <div id="medidas" class="panel-collapse collapse">
+        <b>Peso en orden de marcha:</b> 129 kg<br><br>
+        <b>Largo / Ancho / Alto:</b> 2,091 / 811 / 1,125 mm<br><br>
+        <b>Altura del asiento:</b> 825 mm<br><br>
+        <b>Distancia entre ejes:</b> 1,362 mm<br><br>
+        <b>Distancia libre al piso:</b> 243 mm<br><br>
+        <b>Neumáticos:</b> 90 / 90 - 19 (del.) / 110 / 90 - 17 (tras.)
+        <hr>
+      </div>
+    </div>
+
+    <!-- CAPACIDAD -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordian" href="#capacidad">
+            <span class="pull-right icon-toggle"></span>Capacidad
+          </a>
+        </h4>
+      </div>
+      <div id="capacidad" class="panel-collapse collapse">
+        <b>Capacidad de carga:</b> 155 kg (incluye conductor, pasajero, carga y accesorios)<br><br>
+        <b>Capacidad del tanque:</b> 12 L (incluye 3.5 L de reserva)<br><br>
+        <b>Capacidad de pasajeros:</b> 2
+        <hr>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+
+</div>
+</div>
+
+
+
+<div class="container4">
+<p><br>Incrementa tu emoción. Gracias a su cómoda suspensión y alto rendimiento, experimentarás todo el poder de sus 150cc.</p>
+
+</div>
+
+
+
+
+<p class="text-center caracteristicas-linea">
+ Odómetro deportivo, Alto desempeño
+
+
+
+
+  <span class="sep">|</span>
+Motor 150cc, Mejor suspensión
+  <span class="sep">|</span>
+Freno de disco, Ancha llanta trasera </p>
+
+
+<section id="5189" class="list-article documents">
+  <div class="container5">
+
+    <hr class="red">
+
+    <div class="row">
+
+      <!-- CB300F TWISTER -->
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <article class="post">
+          <div class="guard-of">
+            <a href="dio110.html">
+              <img class="img img-responsive"
+                   src="1/di1.png"
+                   alt="CB300F TWISTER">
+            </a>
+            <h4><b>DIO110<br>$29,742</b></h4>
+          </div>
+        </article>
+      </div>
+
+      <!-- CB350 H´NESS -->
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <article class="post">
+          <div class="guard-of">
+            <a href="cbf150s.html">
+              <img class="img img-responsive"
+                   src="1/fs1.png"
+                   alt="CB350 H´NESS">
+            </a>
+            <h4><b>CBF150S<br>$33,000</b></h4>
+          </div>
+        </article>
+      </div>
+
+      <!-- XR300L TORNADO -->
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <article class="post">
+          <div class="guard-of">
+            <a href="xr190l.html">
+              <img class="img img-responsive"
+                   src="1/xrl1.png"
+                   alt="XR300L TORNADO">
+            </a>
+            <h4><b>XR190L<br>$52,691</b></h4>
+          </div>
+        </article>
+      </div>
+
+      <!-- CRF300F -->
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <article class="post">
+          <div class="guard-of">
+            <a href="wave110s.html">
+              <img class="img img-responsive"
+                   src="1/wa2.png"
+                   alt="CRF300F">
+            </a>
+            <h4><b>WAVE110<br>$28,891</b></h4>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<footer>
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="honda.svg" style="max-width:150px;padding-top: 20%;">
+        </div>
+        <div class="col-sm-3" style="text-align:center;padding-top: 5px;">
+          <b>
+            <br><a href="aviso.html" style="color:white;">Aviso de privacidad</a>
+            <br><a href="terminos.html" style="color:white;">Términos y Condiciones</a>
+            <br><a href="contacto.html" style="color:white;">Contáctanos</a>
+          </b>
+        </div>
+        <div class="col-sm-3" style="text-align:center;margin-top:5px;color:white;">
+          <br>
+          <a href="mailto:ventas@ensambladorahonda.com" style="color:white;">
+            ventas@ensambladorahonda.com
+          </a>
+          <br>
+          <b>Whatsapp:</b> 33 2101 4178<br>
+          <b>Teléfono:</b> 55 9317 8433<br><br>
+          <p>
+            Parque Industrial, Carretera a El Castillo 7250,
+            45680 El Salto, Jalisco, México
+          </p>
+        </div>
+        <div class="col-sm-4" style="text-align:center;">
+          <img src="mm.png" style="max-width:250px;padding-top:10%;">
+        </div>
+      </div>
+    </div>
+    <div class="payment-bar">
+      <img src="visa.png">
+      <img src="master.png">
+      <img src="spei.png">
+      <img src="oxxo.png">
+    </div>
+    <nav style="background:linear-gradient(#e02b20,#670a01);color:white;text-align:center;">
+      <b>Todos los derechos reservados<br>2026</b>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="cms/assets/paginator.js"></script>
+<script src="cms/assets/paginate.js"></script>
+<script src="cms/assets/paginate-content.js"></script>
+<link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet"/>
+<script src="cms/assets/responsiveslides.js"></script>
+<div class='redes-flotantes'>
+<div class="btn-whatsapp">
+<a href="https://wa.me/message/S6MNX4S7PMGHP1">
+<img src="w.png" alt="">
+</a>
+</div>
+</body>
+</html>

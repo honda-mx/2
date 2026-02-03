@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html class='no-js' lang='es'>
+<head>
+  <title>Honda de Mexico</title> 
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#393C3E">
+  <link data-turbolinks-track="true" href="cms/assets/application.css" media="all" rel="stylesheet" />
+  <link rel="icon" href="favi.png">
+  <script src="cms/assets/application.js"></script>
+  <script src="cms/assets/imageReplace.js"></script>
+  <link href="css/main.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet" />
+  <script src="cms/assets/responsiveslides.js"></script> 
+
+<style>
+.redes-flotantes {
+position: fixed;
+right: 8px;
+top: 90%;
+z-index: 20;
+max-width: 80px;
+
+}
+.redes-flotantes img {        max-width: 75%;
+
+float: right; clear: right;
+ margin: 5px;
+-moz-transform: scale(.8) ;
+-webkit-transform: scale(.8) ;
+-o-transform: scale(.8) ;
+-ms-transform: scale(.8) ;
+transform: scale(.8) ;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+/* =========================
+   BARRA DE PAGOS
+========================= */
+/* --- FIX BARRA DE PAGOS EN MÓVIL --- */
+.payment-bar {
+  flex-wrap: wrap;              /* permite bajar a otra línea */
+  padding: 10px 5px;
+}
+
+.payment-bar img {
+  width: 70px;                 /* más pequeño en móvil */
+  margin: 5px;
+}
+
+/* Ajuste fino solo para pantallas chicas */
+@media (max-width: 480px) {
+  .payment-bar {
+    gap: 10px;
+  }
+
+  .payment-bar img {
+    width: 60px;
+  }
+}
+
+  a{color: black;
+
+  }
+  footer{
+ background:black;
+  
+    text-align: center;
+  }
+.container3{
+  color: white;
+  left: 50%;
+  text-align: center;
+ background: linear-gradient( #e02b20, #670a01);  
+ margin-top: 14px; 
+}
+
+
+
+.contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* centra horizontal */
+  align-items: center;
+}
+
+.banner-img {
+  width: 100%;
+  max-width: 1000px;   /* límite elegante */
+  height: auto;
+  display: block;
+}
+ .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: #007bba;
+      outline: none;
+    }
+    .contact-container {
+      width: 100%;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .submit-btn {
+      background:linear-gradient(#e02b20,#670a01);
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background:linear-gradient(#e02b20,#670a01);
+    }
+
+.submit-btn {
+  background: #cc0000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+#btnLoader {
+  animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+</style>
+</head>
+<body>
+
+ <header>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#navbarMainCollapse"
+                style="margin-top:8px;">
+          <span class="sr-only">Interruptor de Navegación</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="honda.svg" style="max-height:100px;">
+        </a>
+      </div>
+      <div id="navbarMainCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right" style="margin-top:10px;">
+          <li><a href="nosotros.html">Inicio</a></li>
+          <li><a href="index.html">Motos</a></li>
+          <li><a href="autos.html">Autos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="cotizador.html">Cotizador</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- SUB NAVBAR -->
+  <nav class="navbar-inverse sub-navbar">
+    <div class="container3">
+      <p style="margin:0;">
+        <strong style="font-size:32px;">PLANTA EL SALTO</strong>
+      </p>
+    </div>
+  </nav>
+</header>
+
+<br><br>
+
+<div class="container">
+  <div class="contenedor">
+    <img src="126.png" class="banner-img img-responsive">
+  </div>
+</div>
+
+
+</div>
+
+
+<section class="seccion-contacto">
+
+  <div class="container">
+
+    <div class="heading">
+      <h3>Estamos aquí para ayudarte.</h3>
+    </div>
+
+    <p class="lead" align="justify">
+      ¿Necesitas cotizar algo? ¿Tienes algún problema con nuestros productos? ¿Deseas validar una garantía?<br><br>
+
+      Contáctanos por cualquiera de los siguientes medios para atenderte como tú te mereces.
+      <br><br>
+
+      <strong>Horario de Servicio:</strong><br>
+      Lunes a Viernes de 9:30 a 18:00 hrs. y Sábado de 9:30 a 15:00 hrs.<br><br>
+
+      <strong>Atención Telefónica:</strong><br>
+      <b>México</b> (+52) 55 9317 8433
+    </p>
+
+    <div class="row">
+
+      <!-- INFO Y CORREOS -->
+      <div class="col-md-4">
+        <h3>Ubicación</h3>
+
+        <p>
+          Parque Industrial, Carretera a El Castillo 7250<br>
+          El Salto, Jalisco, México C.P. 45680
+        </p>
+
+        <p>
+          <strong>Horarios y teléfonos de atención:</strong><br>
+          Lunes a viernes de 09:30 a 18:00 horas<br>
+          Teléfono: (52) 55 9317 8433
+        </p>
+
+        <h3>Correos</h3>
+
+        <p>
+          <b>Administración:</b><br>
+          <a href="mailto:supervision@ensambladorahonda.com">supervision@ensambladorahonda.com</a><br><br>
+
+          <b>Facturas:</b><br>
+          <a href="mailto:facturacion@ensambladorahonda.com">facturacion@ensambladorahonda.com</a><br><br>
+
+          <b>Ventas:</b><br>
+          <a href="mailto:ventas@ensambladorahonda.com">ventas@ensambladorahonda.com</a>
+        </p>
+      </div>
+
+      <!-- FORMULARIO -->
+      <div class="col-md-4">
+        <h3>Envíanos un mensaje</h3>
+        <p>Puedes contactarnos mediante el siguiente formulario.</p>
+  <!-- Formulario en el 50% de la pantalla -->
+        
+          <form id="contactForm" action="procesarFormulario.php" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="nombre">* Nombre completo:</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana Martínez" required>
+            </div>
+
+            <div class="form-group">
+              <label for="correo">* Correo electrónico:</label>
+              <input type="email" id="correo" name="correo" placeholder="Ej. ana@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="telefono">Teléfono de contacto:</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="Ej. 555-123-4567">
+            </div>
+
+            <div class="form-group">
+              <label for="asunto">* Asunto:</label>
+            <select id="asunto" name="asunto" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="mayoreo">Mayoreo</option>
+                <option value="quejas">Quejas y sugerencias</option>
+                <option value="garantias">Garantias</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">* Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+
+           <button type="submit" class="submit-btn" id="btnEnviar">
+  <span id="btnTexto">Enviar mensaje</span>
+  <span id="btnLoader" style="display:none; margin-left:8px;">⏳</span>
+</button>
+
+          </form>
+      </div>
+
+      <!-- MAPA -->
+      <div class="col-md-4">
+        <h3>Mapa</h3>
+
+       <iframe 
+  src="https://maps.google.com/maps?q=Parque%20Industrial%20Carretera%20a%20El%20Castillo%207250%20El%20Salto%20Jalisco%20Mexico&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+  frameborder="0"
+  scrolling="no"
+  style="width: 100%; height: 450px; border:0;">
+</iframe>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+          
+    <script>
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const form = this;
+  const btn = document.getElementById('btnEnviar');
+  const texto = document.getElementById('btnTexto');
+  const loader = document.getElementById('btnLoader');
+
+  const nombre = document.getElementById('nombre').value.trim();
+  const correo = document.getElementById('correo').value.trim();
+  const asunto = document.getElementById('asunto').value;
+  const mensaje = document.getElementById('mensaje').value.trim();
+
+  // Validaciones
+  if (!nombre || !correo || !asunto || !mensaje) {
+    mostrarPopup("Por favor, completa todos los campos obligatorios.");
+    return;
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(correo)) {
+    mostrarPopup("Por favor, ingresa un correo electrónico válido.");
+    return;
+  }
+
+  // 🔥 ESTADO ENVIANDO
+  btn.disabled = true;
+  texto.innerText = "Enviando...";
+  loader.style.display = "inline-block";
+
+  // Enviar por AJAX
+  var formData = new FormData(form);
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", form.action, true);
+
+  xhr.onload = function() {
+    // Volver botón normal
+    btn.disabled = false;
+    texto.innerText = "Enviar mensaje";
+    loader.style.display = "none";
+
+    if (xhr.status === 200) {
+
+      // Limpiar formulario
+      form.reset();
+
+      mostrarPopup(`¡Gracias, ${nombre}!\nTu mensaje ha sido enviado correctamente.\nNos pondremos en contacto contigo pronto.`);
+
+    } else {
+      mostrarPopup("Hubo un error al enviar tu mensaje. Por favor, intenta nuevamente.");
+    }
+  };
+
+  xhr.onerror = function() {
+    btn.disabled = false;
+    texto.innerText = "Enviar mensaje";
+    loader.style.display = "none";
+    mostrarPopup("Error de conexión. Intenta nuevamente.");
+  };
+
+  xhr.send(formData);
+});
+
+// POPUP
+function mostrarPopup(mensaje) {
+  document.getElementById('popupMensaje').innerText = mensaje;
+  document.getElementById('popup').style.display = 'block';
+}
+
+function cerrarPopup() {
+  document.getElementById('popup').style.display = 'none';
+}
+</script>
+
+
+
+<footer>
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="honda.svg" style="max-width:150px;padding-top: 20%;">
+        </div>
+        <div class="col-sm-3" style="text-align:center;padding-top: 5px;">
+          <b>
+            <br><a href="aviso.html" style="color:white;">Aviso de privacidad</a>
+            <br><a href="terminos.html" style="color:white;">Términos y Condiciones</a>
+            <br><a href="contacto.html" style="color:white;">Contáctanos</a>
+          </b>
+        </div>
+        <div class="col-sm-3" style="text-align:center;margin-top:5px;color:white;">
+          <br>
+          <a href="mailto:ventas@ensambladorahonda.com" style="color:white;">
+            ventas@ensambladorahonda.com
+          </a>
+          <br>
+          <b>Whatsapp:</b> 33 2101 4178<br>
+          <b>Teléfono:</b> 55 9317 8433<br><br>
+          <p>
+            Parque Industrial, Carretera a El Castillo 7250,
+            45680 El Salto, Jalisco, México
+          </p>
+        </div>
+        <div class="col-sm-4" style="text-align:center;">
+          <img src="mm.png" style="max-width:250px;padding-top:10%;">
+        </div>
+      </div>
+    </div>
+    <div class="payment-bar">
+      <img src="visa.png">
+      <img src="master.png">
+      <img src="spei.png">
+      <img src="oxxo.png">
+    </div>
+    <nav style="background:linear-gradient(#e02b20,#670a01);color:white;text-align:center;">
+      <b>Todos los derechos reservados<br>2026</b>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="cms/assets/paginator.js"></script>
+<script src="cms/assets/paginate.js"></script>
+<script src="cms/assets/paginate-content.js"></script>
+<link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet"/>
+<script src="cms/assets/responsiveslides.js"></script>
+<div class='redes-flotantes'>
+<div class="btn-whatsapp">
+<a href="https://wa.me/message/S6MNX4S7PMGHP1">
+<img src="w.png" alt="">
+</a>
+</div>
+</body>
+</html>

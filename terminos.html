@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html class='no-js' lang='es'>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <title>Honda de Mexico</title> 
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#393C3E">
+  <link data-turbolinks-track="true" href="cms/assets/application.css" media="all" rel="stylesheet" />
+  <link rel="icon" href="favi.png">
+  <script src="cms/assets/application.js"></script>
+  <script src="cms/assets/imageReplace.js"></script>
+  <link href="css/main.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet" />
+  <script src="cms/assets/responsiveslides.js"></script> 
+
+<style>
+
+    
+.caracteristicas-linea{
+  font-size: 16px;
+}
+
+.caracteristicas-linea .sep{
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+  .btn-buy {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: #670a01;
+  color: #fff;
+
+  padding: 10px 22px;
+  border-radius: 999px; /* pastilla real */
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.btn-buy i {
+  font-size: 16px;
+}
+
+.btn-buy:hover {
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-buy:active {
+  transform: translateY(0);
+}
+
+  .redes-flotantes {
+position: fixed;
+right: 8px;
+top: 90%;
+z-index: 20;
+max-width: 80px;
+
+}
+.redes-flotantes img {        max-width: 75%;
+
+float: right; clear: right;
+ margin: 5px;
+-moz-transform: scale(.8) ;
+-webkit-transform: scale(.8) ;
+-o-transform: scale(.8) ;
+-ms-transform: scale(.8) ;
+transform: scale(.8) ;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+/* =========================
+   BARRA DE PAGOS
+========================= */
+/* --- FIX BARRA DE PAGOS EN MÓVIL --- */
+.payment-bar {
+  flex-wrap: wrap;              /* permite bajar a otra línea */
+  padding: 10px 5px;
+}
+
+.payment-bar img {
+  width: 70px;                 /* más pequeño en móvil */
+  margin: 5px;
+}
+
+/* Ajuste fino solo para pantallas chicas */
+@media (max-width: 480px) {
+  .payment-bar {
+    gap: 10px;
+  }
+
+  .payment-bar img {
+    width: 60px;
+  }
+}
+
+  a{color: white;
+
+  }
+  footer{
+ background:black;
+  
+    text-align: center;
+  }
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    margin-top: 25px;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+ 
+ 
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, 10%);
+    color:white;
+    margin-right: 15%;
+    margin-left: 15%;
+
+
+}
+.centrado1{
+    position: absolute;
+    top: 25px;
+    left: 20%;
+    transform: translate(-10%, -10%);
+    color: black;
+    margin-top: 1px;
+
+}
+.container3{
+  color: white;
+  left: 50%;
+  text-align: center;
+ background: linear-gradient( #e02b20, #670a01);  
+ margin-top: 14px; 
+}
+.contenedor4{
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    align-items: center;
+    background-color: #53905b;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+</style>
+</head>
+<body>
+
+ <header>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#navbarMainCollapse"
+                style="margin-top:8px;">
+          <span class="sr-only">Interruptor de Navegación</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="honda.svg" style="max-height:100px;">
+        </a>
+      </div>
+      <div id="navbarMainCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right" style="margin-top:10px;">
+          <li><a href="nosotros.html">Inicio</a></li>
+          <li><a href="index.html">Motos</a></li>
+          <li><a href="autos.html">Autos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="cotizador.html">Cotizador</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- SUB NAVBAR -->
+  <nav class="navbar-inverse sub-navbar">
+    <div class="container3">
+      <p style="margin:0;">
+        <strong style="font-size:32px;">PLANTA EL SALTO</strong>
+      </p>
+    </div>
+  </nav>
+</header>
+
+<div class="modal-header"><br><br><br>
+                <h4 class="modal-title" style="text-align:center;" >Términos y condiciones</h4>
+           
+            </div>
+            <!-- END header -->
+
+            <!-- body -->
+            <div class="modal-body">
+                <div class="container-fluid">
+            <div class="row">
+                <div class="col-12" style="margin-left:10% ;margin-right:10% ;" >
+                  <br><br>
+                        Estos términos y condiciones de uso (en lo sucesivo los “Términos y Condiciones”) tienen por objeto regular el uso de este sitio web que HDM pone a disposición de Usted. Por lo que nada de lo contenido en este sitio puede o deberá ser considerado como una compra-venta, ni como promesa de compra-venta, ni como una declaración unilateral de la voluntad, ni como cualquier tipo de operación mercantil por parte de HDM, por lo que no resultan aplicables las disposiciones del Código de Comercio relativas al comercio electrónico ni cualquier otro tipo de disposición.
+                    </p>
+<br>
+                    <p>
+                        El uso que Usted haga de este sitio web, por sí mismo o por conducto de un tercero, le atribuye la calidad de usuario (en lo sucesivo usuario) e implica la aceptación plena, total y absoluta de todas y cada una de las condiciones generales de este sitio web.
+                        HDM puede, en cualquier momento y a su absoluta y total discreción, modificar total o parcialmente, los Términos y Condiciones de este sitio y sin previo aviso, por lo que le recomendamos que consulte los Términos y Condiciones cada vez que use este sitio web. Si usa este sitio web después de que se hayan modificado los Términos y Condiciones, se considerará que Usted ha aceptado los Términos y Condiciones modificados.
+                    </p>
+<br>
+                    <p>
+                        <span class="text-underline"><b>Limitación de uso.</span><br/></b>
+                        Las marcas comerciales y otras marcas de productos, logotipos o marcas de servicio; incluido pero no limitado a el logotipo de “Honda”, el logotipo de “Power of Dreams”, “Powered by Honda”, “Honda Racing ”, “Honda Marine ”, “PowerHouse ”, “Acura Advance ”, y demás textos, imágenes, gráficos, archivos de video y/o sonido y/o animaciones digitales, colores, cualquier representación gráfica, forma, tamaños, características, así como cualquier elemento que sirva para distinguir a los productos, siluetas, imágenes, servicios, marcas relacionadas con los vehículos, motocicletas, partes, servicios, refacciones, productos de poder y marinos, contenidos en este sitio web, están sujetos a derechos de autor y constituyen propiedad industrial de HDM; por lo que cualquier uso no autorizado del contenido de este sitio es considerado como violatorio en términos de las leyes de propiedad industrial, civiles, penales, mercantiles y cualquier otra disposición aplicable.
+                    </p>
+<br>
+                    <p>
+                        También se prohíbe, independientemente de los motivos, el uso y reproducción total o parcial no autorizada de este sitio web con el propósito de causar daños o perjuicios a HDM y/o a cualquier tercero.
+                        Adicionalmente, queda prohibido, el uso, carga o descarga de softwares dañinos tales como virus informáticos.
+                    </p>
+<br>
+                    <p>
+                        <span class="text-underline"><b>Marcas comerciales.</span><br/></b>
+                        Las marcas comerciales y otras marcas de productos, logotipos o marcas de servicio, incluido pero no limitado a el logotipo de “Honda ” y “Acura ”, el texto o leyenda de “Power of Dreams ”, “Powered by Honda ”, “Honda Racing ”, “Honda Marine ”, “PowerHouse ”, “Acura Advance ”, y demás textos, imágenes, gráficos, archivos de video y/o sonido y/o animaciones digitales, colores, cualquier representación gráfica, forma, tamaños, características, así como cualquier elemento que sirva para distinguir a los productos, siluetas, imágenes, servicios, marcas relacionadas con los vehículos, motocicletas, partes, servicios, refacciones, productos de poder y marinos son propiedad de Honda Motor Co. LTD y HDM es licenciataria  autorizada de dichas marcas para su uso y explotación en los Estados Unidos Mexicanos.
+                    </p>
+<br>
+                    <p>
+                        En virtud de lo anterior, HDM no concede ningún tipo de licencia o autorización de uso personal al Usuario sobre dichos derechos de propiedad industrial, incluyendo pero no limitando a sus marcas o sobre cualquier otro derecho relacionado con este sitio web y los servicios ofrecidos en el mismo.
+                    </p>
+<br>
+                    <p>
+                        En consecuencia, Usted como Usuario de este sitio web reconoce y acepta desde este momento que por el uso de este sitio web no adquiere ningún derecho de propiedad sobre este sitio web, ni sobre su contenido, ni sobre las marcas comerciales y otras marcas de productos, logotipos, textos o leyendas y marcas de servicio indicadas y contenidas en el sitio web, así como se hace sabedor que  la reproducción, distribución, ejecución o modificación total o parcial del contenido de este sitio web sin autorización por escrito de HDM constituye una violación a esos derechos de propiedad industrial e intelectual.
+                    </p>
+<br>
+                    <p>
+                        <span class="text-underline"><b>Venta de Productos.</span><br/></b>
+                        La venta de productos, ya sean vehículos automotores de la marca “Honda ”, “Acura ”, productos de fuerza, marinos y motocicletas, es exclusiva responsabilidad de los Distribuidores Autorizados de la marca, respectivamente; quienes son entidades independientes y ajenas a HDM.
+                    </p>
+<br>
+                    <p>
+                        <span class="text-underline"><b>Disponibilidad de los Productos.</span><br/></b>
+                        Alguno o algunos de los productos ya sean vehículos automotores de la marca “Honda ”  y/o “Acura ”, productos de fuerza, marinos y motocicletas, anunciados y contenidos en este sitio web, pueden no estar disponibles en su localidad al momento de su consulta, por lo que le recomendamos que previo a realizar cualquier compra de los productos aquí contenidos, se ponga en contacto con cualquiera de nuestros Distribuidores Autorizados.
+                    </p>
+<br>
+                    <p>
+                        Los montos de las cotizaciones mostradas, así como los precios y promociones de los productos contenidos en este sitio web, aplican únicamente para productos comercializados en territorio de los Estados Unidos Mexicanos y son precios sugeridos al público en general, por lo que dichos precios son expresados en moneda nacional, y no incluyen costos de seguros, costos de envío, ni ningún otro servicio; en consecuencia los precios y cotizaciones mostradas son meramente de carácter informativo y están sujetos a cambio sin previo aviso y no representan el precio de venta final del producto.
+                    </p>
+
+<br>
+                    <p>
+                        <span class="text-underline"><b>Garantía de contenido.</span><br/></b>
+                        Ni HDM, ni sus filiales garantizan la concurrencia, integridad, precisión, utilidad, ni idoneidad para ningún propósito particular respecto del contenido de este Sitio web. Para obtener información precisa sobre los productos previo a la compra y entrega del producto de su elección, le recomendamos que la verifique con su Distribuidor Autorizado.
+                    </p>
+<br>
+                    <p>
+                        En caso de ya haber adquirido el producto, consulte (en el caso de ser un usuario final) el manual del propietario proporcionado por HDM que corresponda a cada producto y (en el caso de ser el técnico de un Distribuidor Autorizados) el manual del propietario y el manual de servicio proporcionado por HDM que corresponda a cada producto. Este sitio web no pretende ser una incitación a la venta o la compra de los productos relevantes. Honda y sus filiales no serán responsables de los errores, inexactitud o la insuficiencia de la información descrita que se encuentra en este sitio web.
+                    </p>
+<br>
+                    <p>
+                        Por lo que le informamos que todas las imágenes fotográficas y de video, internas y externas, de los productos contenidos en este sitio web así como sus colores, solo son ilustrativas y de referencia, por lo que pueden percibirse de diversas formas dependiendo del tipo de monitor, configuración de red y capacidad del sistema operativo del dispositivo por el cual visualiza este sitio web.
+                    </p>
+<br>
+
+                    <p>
+                        <span class="text-underline"><b>Exención de responsabilidad.</span><br/></b>
+                        Usted usará este sitio web bajo su propio riesgo, y ni HDM ni sus filiales garantizan la funcionalidad ni seguridad (como la ausencia de virus informáticos, o algún otro elemento peligroso) de este sitio web. Ni HDM, ni ningún otro tercero relacionado que participe en la creación, soporte, hosting y otras operaciones de este sitio web serán responsables ante Usted o ante algún tercero, en caso de producirse daños (incluidos, entre otros, daños a su computadora personal, teléfono inteligente, tablet o red, independientemente de que ese daño sea directo o indirecto) o reparaciones, u otros costos que puedan surgir del acceso o el uso (o la incapacidad de acceso y uso) de este sitio web.
+                    </p>
+
+<br>
+                    <p>
+                        <span class="text-underline"><b>Sitios vinculados.</span><br/></b>
+                        El uso que Usted haga de este sitio web, lo puede direccionar o redireccionar a sitios web externos e independientes de este sitio y que son o pueden ser propiedad de un tercero, ajeno e independiente a HDM; por lo que ni HDM, ni sus filiales serán responsables ante Usted o ante un tercero, por el contenido de los sitios web relacionados a través de enlaces a este sitio web o desde él (“Sitios vinculados”) ni por ningún daño que surja del uso o la incapacidad de uso de los sitios web vinculados. Tenga en cuenta que Usted y demás terceros tienen prohibido vincular a este Sitio web, sitios web administrados por Usted o por terceros.
+                    </p>
+<br>
+
+                    <p>
+                        <span class="text-underline">Interrupción de funcionamiento de este Sitio web, detención de servidor y modificación del contenido o de los Términos y Condiciones.</span><br/>
+                        HDM puede interrumpir o suspender, parcial o total, temporal o permanentemente; el funcionamiento de este sitio web, los servicios proporcionados, la publicidad, y/o promociones publicadas a través de este sitio web o establecidos en él, en cualquier momento sin previo aviso. HDM y sus filiales no serán responsables por las desventajas ni por los daños y/o perjuicios que Usted o algún tercero sufran en relación con dicha interrupción, suspensión, detención, modificación, alteración o paralización.
+                    </p>
+<br>
+
+                    <p>
+                        <span class="text-underline"><b>Uso de Cookies.</span><br/></b>
+                        HDM utiliza “cookies” a través del sitio para mejorar la visita del usuario. Usted como usuario puede optar por desactivar o bloquear el uso de dichas “cookies” dentro de su buscador (browser) pero al hacerlo probablemente no podrá visualizar en todo o en parte el contenido de este sitio lo que dificultará su navegación en él. Las “cookies” No nos proporcionan ningún tipo de información del usuario que pueda ser considerada como Datos Personales o Datos Personales Sensibles, únicamente brindan información sobre los hábitos de navegación del o los usuarios de un equipo de cómputo a través del cual se accede a este sitio web.
+                    </p>
+
+<br>
+                    <p>
+                        <span class="text-underline"><b>Jurisdicción y Legislación Aplicable en caso de Controversia.</b></span><br/>
+                        Usted al hacer uso de este sitio web y de los servicios proporcionados en él, acepta de manera expresa que en caso de controversia, se someterá a las leyes y a los tribunales competentes en el Estado de Jalisco, México.
+                    </p><br>
+                </div>
+            </div>
+        </div>
+            </div>
+            
+
+
+
+<footer>
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="honda.svg" style="max-width:150px;padding-top: 20%;">
+        </div>
+        <div class="col-sm-3" style="text-align:center;padding-top: 5px;">
+          <b>
+            <br><a href="aviso.html" style="color:white;">Aviso de privacidad</a>
+            <br><a href="terminos.html" style="color:white;">Términos y Condiciones</a>
+            <br><a href="contacto.html" style="color:white;">Contáctanos</a>
+          </b>
+        </div>
+        <div class="col-sm-3" style="text-align:center;margin-top:5px;color:white;">
+          <br>
+          <a href="mailto:ventas@ensambladorahonda.com" style="color:white;">
+            ventas@ensambladorahonda.com
+          </a>
+          <br>
+          <b>Whatsapp:</b> 33 2101 4178<br>
+          <b>Teléfono:</b> 55 9317 8433<br><br>
+          <p>
+            Parque Industrial, Carretera a El Castillo 7250,
+            45680 El Salto, Jalisco, México
+          </p>
+        </div>
+        <div class="col-sm-4" style="text-align:center;">
+          <img src="mm.png" style="max-width:250px;padding-top:10%;">
+        </div>
+      </div>
+    </div>
+    <div class="payment-bar">
+      <img src="visa.png">
+      <img src="master.png">
+      <img src="spei.png">
+      <img src="oxxo.png">
+    </div>
+    <nav style="background:linear-gradient(#e02b20,#670a01);color:white;text-align:center;">
+      <b>Todos los derechos reservados<br>2026</b>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="cms/assets/paginator.js"></script>
+<script src="cms/assets/paginate.js"></script>
+<script src="cms/assets/paginate-content.js"></script>
+<link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet"/>
+<script src="cms/assets/responsiveslides.js"></script>
+<div class='redes-flotantes'>
+<div class="btn-whatsapp">
+<a href="https://wa.me/message/S6MNX4S7PMGHP1">
+<img src="w.png" alt="">
+</a>
+</div>
+</body>
+</html>

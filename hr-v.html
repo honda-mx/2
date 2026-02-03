@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html class='no-js' lang='es'>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <title>Honda de Mexico</title> 
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#393C3E">
+  <link data-turbolinks-track="true" href="cms/assets/application.css" media="all" rel="stylesheet" />
+  <link rel="icon" href="favi.png">
+  <script src="cms/assets/application.js"></script>
+  <script src="cms/assets/imageReplace.js"></script>
+  <link href="css/main.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet" />
+  <script src="cms/assets/responsiveslides.js"></script> 
+     
+  <style >
+
+    
+.caracteristicas-linea{
+  font-size: 16px;
+}
+
+.caracteristicas-linea .sep{
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+  .btn-buy {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: #670a01;
+  color: #fff;
+
+  padding: 10px 22px;
+  border-radius: 999px; /* pastilla real */
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.btn-buy i {
+  font-size: 16px;
+}
+
+.btn-buy:hover {
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-buy:active {
+  transform: translateY(0);
+}
+
+  .redes-flotantes {
+position: fixed;
+right: 8px;
+top: 90%;
+z-index: 20;
+max-width: 80px;
+
+}
+.redes-flotantes img {        max-width: 75%;
+
+float: right; clear: right;
+ margin: 5px;
+-moz-transform: scale(.8) ;
+-webkit-transform: scale(.8) ;
+-o-transform: scale(.8) ;
+-ms-transform: scale(.8) ;
+transform: scale(.8) ;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+/* =========================
+   BARRA DE PAGOS
+========================= */
+/* --- FIX BARRA DE PAGOS EN MÓVIL --- */
+.payment-bar {
+  flex-wrap: wrap;              /* permite bajar a otra línea */
+  padding: 10px 5px;
+}
+
+.payment-bar img {
+  width: 70px;                 /* más pequeño en móvil */
+  margin: 5px;
+}
+
+/* Ajuste fino solo para pantallas chicas */
+@media (max-width: 480px) {
+  .payment-bar {
+    gap: 10px;
+  }
+
+  .payment-bar img {
+    width: 60px;
+  }
+}
+
+
+      hr{
+        
+        border-color: black;
+      }
+footer{
+     background:black;
+  
+    text-align: center;
+  }
+.container4{
+  margin-right: 15%;margin-left: 15%;
+  text-align: center;
+}
+
+    .container3{
+  color: white;
+  left: 50%;
+  text-align: center;
+ background: linear-gradient( #e02b20, #670a01);  
+ margin-top: 14px; 
+}
+
+.container5{
+ margin-top: 10%; 
+ margin-top: 10%;
+ margin-right: 10%;
+ margin-left:  10%; 
+ text-align: center;
+}
+
+      .interior h2, .interior h3, .interior h4, .interior p, .pagina h2, .pagina h3, .pagina h4, .pagina p {
+  margin-bottom: 17px;
+}
+
+       .item-control i {
+  background: #fff;
+  color: #f00;
+  font-size: 20px;
+  padding: 5px 10px;
+  align-items: center;
+}
+
+
+
+.recommended-item-control i {
+  background: none repeat scroll 0 0 #bc955c;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 4px 10px;
+}
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.recommended-item-control i {
+  background: none repeat scroll 0 0 #bc955c;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 4px 10px;}
+nav-tabs li.active a, .nav-tabs li.active a:hover, .nav-tabs li.active a:focus {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #bc955c;
+  border: 0px;
+  color: #FFFFFF;
+  cursor: default;
+  margin-right: 0;
+  margin-left: 0;
+  }
+  a {
+    color: white;
+  }
+  .nav-tabs li.active a, .nav-tabs li.active a:hover, .nav-tabs li.active a:focus {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background-color: #bc955c;
+  border: 0px;
+  color: #FFFFFF;
+  cursor: default;
+  margin-right: 0;
+  margin-left: 0;
+}
+.nav-tabs > li > a:hover {
+  border-color: #0c231e #0c231e #0c231e;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+.nav-tabs > li > a {
+  background-color: #0c231e;
+  margin-right: 0px;
+  border: 1px solid #d5d5d5;
+  border-radius: 0px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+.shop-details-tab {
+
+  
+    margin-bottom: 4 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+}.category-tab ul {
+  background: #0c231e;
+  border-bottom: 1px solid #bc955c;
+  list-style: none outside none;
+  margin: 0 0 30px;
+  padding: 0;
+  width: 100%;
+          }
+   h2 {
+            color: #1E3A5F;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+        }
+        input, select, buton {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        buton {
+            background-color: #1E3A5F;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        buton:hover {
+            background-color: #14273D;
+        }
+        #resultado {
+            font-size: 18px;
+            margin-top: 15px;
+            font-weight: bold;
+            background: #e8e8e8;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            text-align: center;
+              background-color: #f4f4f4;
+        }
+
+
+
+
+
+  </style>                     </head>
+<body>
+   <header class=" navbar navbar-inverse">
+    <nav class="navbar navbar-inverse  navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-target="#navbarMainCollapse" data-toggle="collapse"style="margin-top: 8px;">
+            <span class="sr-only">Interruptor de Navegación</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img src="honda.png" style="padding: 0px 0px 0px 1px;" class="navbar-brand ">
+         
+        </div>
+       
+           <div id="navbarMainCollapse" class="collapse navbar-collapse">
+    <ul class="nav navbar-nav navbar-right" style="margin-top: 10px;">
+                 <li><a href="nosotros.html" >Inicio</a></li>
+            <li><a href='index.html'>Motos</a></li>
+            <li><a href='autos.html'>Autos</a></li>
+            <li><a href="contacto.html" >Contacto</a></li>
+            <li><a href="cotizador.html" >Cotizador</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+         <nav class=" navbar-inverse sub-navbar fixed-top"
+     >
+  <div class="container3">
+   
+      <div class="container3" ><p>
+      <b><font size=6>PLANTA EL SALTO</font></p></b>
+      </div>      
+  </div>
+</nav>
+</header>
+  
+<main class="inner-page interior ficha">
+  <div class="container">
+   <div class="col-sm-12" style="text-align:center;">    
+    
+   
+    <div class="">
+      
+      <div class="marquee-padding">
+      <div class='post-list main-post-list'>
+
+<div>
+ <br><br>
+</div>
+</div>
+      </div>
+      <section>
+      <div class="col-md-7 col-xs-12 col-sm-12 pull-left" tabindex="0">
+          
+        <div class="col-sm-12  padding-left">
+          <div class="product-details"><!--product-details-->
+            <div class="col-sm-6">
+              <div class="view-product"class="img img-responsive">
+                <img src="cms/hr.png" class="img img-responsive">
+                
+              </div>
+
+
+
+              <div id="similar-product" class="carousel slide" data-ride="carousel">
+                
+                  <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                    <div class="item active">
+                      <a href="cms/hr/1.png"><img src="cms/hr/1.png"></a>
+                      </div>
+                     <div class="item ">
+                      <a href="cms/hr/2.png"><img src="cms/hr/2.png"></a>
+                    </div>              
+                     <div class="item ">
+                      <a href="cms/hr/3.png"><img src="cms/hr/3.png"></a>        
+                    </div>
+                       <div class="item ">
+                      <a href="cms/hr/3.png"><img src="cms/hr/3.png"></a>        
+                    </div>
+                    <div class="item ">
+                      <a href="cms/hr/4.png"><img src="cms/hr/4.png"></a>        
+                    </div>
+                     <div class="item ">
+                      <a href="cms/hr/5.png"><img src="cms/hr/5.png"></a>        
+                    </div>
+                    <div class="item ">
+                      <a href="cms/hr/6.png"><img src="cms/hr/6.png"></a>        
+                    </div>
+                                  
+                  </div>
+
+                  <!-- Controls -->
+                  <a class="left item-control" href="#similar-product" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+                  </a>
+                  <a class="right item-control" href="#similar-product" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+                  </a>
+              </div>
+
+            </div>
+            <div class="col-sm-6 ">
+              <div class="product-information"><!--/product-information-->
+             <h3> Honda Hr-v 2025</h3>
+             <a href="Ficha-Tecnica-hr-v2025.pdf" style="color: red;" ><span > <b>DESCARGAR FICHA TECNICA EN PDF</b></span></a>
+             <span><h4>Desde MXN $385,385.00</h4></span>
+                   <button type="button" style=" background-color:#000;"> 
+                 <i class="fa-solid fa-check" style="color: white;"  >
+                       <a href="compralo.html" style="color: #fff;font-size: 11px;">Comprar</a></i> 
+                  
+                  </button>
+                </span><p> 
+
+                <b><br>Versiones:<br>Uniq $385,385.00 <br> Sport $409,435.00 <br>Touring $430,885.00</b> 
+               <b><br>Color:</b>Negro Cristal - Verde Nórdico - Plata Lunar - Blanco Platino - Gris Cósmico - Rojo Milano
+               <b><br>Color interior:</b>Negro
+                <b><br>Cilindros:</b> 4 cilindros  
+                <b><br>Motor:</b> 2.0 Litros  
+                <b><br>Valvulas:</b>16 válvulas
+DOHC Dual VTC e i-VTEC
+                <b><br> Torque neto:</b>  136 lb/pie @ 4,200 rpm*
+                 <b><br>Potencia neta:</b> 155 hp @ 6,500 rpm*
+
+
+
+              </div><!--/product-information-->
+             
+              </div>
+              </div>
+              </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+      </div>
+
+      <div class="col-md-4 col-xs-12 pull-right"style="text-align:left;">
+
+
+
+ <div class="">
+         
+            <div class="panel-group category-products" id="accordian" style="margin-bottom: 10px;"><!--category-productsr-->
+             <br><br>
+  <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#mane">
+                       <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                Características de Ingeniería
+                    </a>
+                  </h4>
+                </div>
+                <div id="mane" class="panel-collapse collapse">
+                 
+<b>Motor de Aleación de Aluminio: </b>   4 Cilindros en linea <br> 2.0 Litros 
+16 válvulas
+DOHC Dual VTC e i-VTEC<br>
+Potencia neta: 155 hp @ 6,500  rpm* <br>
+Torque neto: 136 lb/pie @ 4,200 rpm*
+<br><br><b>Sistema Eco Assist™ </b> 
+<br><br><b>Desplazamiento del motor (centímetros cúbicos) </b> 1,996 cc 
+                  <hr>
+                 <br><br>. 
+                </div>
+              </div>
+
+
+              
+            
+              
+                 <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#tal">
+                      <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+               Transmisión
+                    </a>
+                  </h4>
+                </div>
+                <div id="tal" class="panel-collapse collapse">
+                 
+
+Transmisión de velocidad Continuamente Variable (CVT)
+<br><br>Paletas de cambios en el volante (Paddle Shifters)
+<br><br>Sistema de tracción delantera
+
+                 <hr>
+                </div>
+              </div>
+              
+<div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#susde">
+                      <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                 Suspensión, Chasis Y Dirección
+                    </a>
+                 
+                  </h4>
+                </div>
+                <div id="susde" class="panel-collapse collapse">
+              
+<b>Barra estabilizadora: </b>     delantera  
+<br><br><b>Diámetro de giro (metros): </b>    10.4 (uniq) - 11.0
+<br><br><b>Dirección Geosensible de piñón y cremallera con Asistencia Eléctrica
+(EPS)</b>
+<br><br><b>Neumático de refacción compacto </b> 
+<br><br><b>Neumáticos y rines de aluminio:</b>215/60 R17 (uniq) - 225/55 R18 
+<br><br><b>Suspensión independiente en las cuatro ruedas, de tipo
+MacPherson delantera y multi-link trasera</b>
+
+
+<hr>
+                </div>
+              </div>
+           
+            
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#desem">
+                      <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+               Dimensiones Exteriores
+                    </a>
+                  </h4>
+                </div>
+                <div id="desem" class="panel-collapse collapse">
+              
+<b>Altura total  (milímetros):</b>1,620 mm
+<br><br><b>Ancho entre vías: delantera / trasera (milímetros):</b> 1,590/1,604 mm
+<br><br><b>Ancho total (milímetros):</b>1,840 mm
+<br><br><b>Distancia entre ejes (milímetros):</b> 2,655 mm
+<br><br><b>Largo total:</b> 4,568     
+<br><br><b>Peso vehicular (kilogramos):</b> 2,072 kg
+<br><br><b>Capacidad del tanque de combustible (litros):</b>57 litros    
+
+
+               <hr>
+                </div>
+              </div>
+
+             
+           
+            </div><!--/category-products-->
+         </div>
+         </div>  
+
+            </div>
+          </div><!--/product-details-->
+
+<h5>
+
+
+
+     
+    </div>
+
+
+
+
+
+
+<section style="margin: 10%;text-align: center;">
+  
+
+
+
+      <div class="containe" style="padding: 10%;padding-top: 0%;">
+        <h2>Cotiza tu auto
+        </h2>
+        <label>Precio del Auto:</label>
+        <input type="number" id="precio" placeholder="Ej. 500000" required>
+        
+        <label>Plazo en años:</label>
+        <select id="plazo">
+             <option value="1">1 año</option>
+            <option value="2">2 años</option>
+            <option value="3">3 años</option>
+            <option value="4">4 años</option>
+            <option value="5">5 años</option>
+            <option value="6">6 años</option>
+        </select>
+        
+        <label>Porcentaje de Enganche:</label>
+        <select id="enganche">
+            <option value="10">10%</option>
+            <option value="15">15%</option>
+            <option value="20">20%</option>
+            <option value="25">25%</option>
+            <option value="30">30%</option>
+            <option value="40">40%</option>
+            <option value="50">50%</option>
+            <option value="60">60%</option>
+        </select>
+        
+        <buton onclick="calcularPago()">Calcular Mensualidad</buton>
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function calcularPago() {
+            let precio = parseFloat(document.getElementById('precio').value);
+            let plazo = parseInt(document.getElementById('plazo').value);
+            let enganche = parseInt(document.getElementById('enganche').value);
+            
+            if (!precio || precio <= 0) {
+                alert('Ingrese un precio válido');
+                return;
+            }
+            
+            let montoEnganche = (precio * enganche) / 100;
+            let montoFinanciar = precio - montoEnganche;
+            let meses = plazo * 12;
+            let tasaInteresAnual = 0.088; 
+            let tasaMensual = tasaInteresAnual / 12;
+            
+            let pagoMensual = (montoFinanciar * tasaMensual) / (1 - Math.pow(1 + tasaMensual, -meses));
+            
+            document.getElementById('resultado').innerHTML = `Pago mensual estimado: $${pagoMensual.toFixed(2)}<br>Enganche: $${montoEnganche.toFixed(2)}`;
+        }
+    </script>
+</section>
+
+
+
+
+
+<div class="container4">
+<p>La sexta generación de la icónica Honda CR-V llega para marcar el camino con una figura renovada y segura. Muchos de los cambios se aprecian en la parte delantera, con un cofre más alargado, faros delgados y una parrilla más prominente, además de una fascia más estilizada y limpia.
+<br><br>
+La parte trasera presenta una evolución respecto a la generación anterior, con calaveras verticales siendo una de sus firmas desde las primeras generaciones, además de rines de aluminio de 19” en tono negro brillante que le dan una apariencia imponente junto con sus espejos laterales y manijas de apertura al color del automóvil. </p>
+
+</div>
+   
+<section id="5189"  class="list-article documents" >
+  <div class="container5">
+    
+    <hr class="red">
+    <div class="row">
+        <div class="col-md-4 col-xs-12 col-ms-12">    
+            <article class="post">
+          <div class="guard-of">
+          <a href="city.html"><img class="img img-responsive" src="cms/ci.png" /></a> 
+          <h4><b>Honda City 2025<br> Desde MXN $268,835.00 </b></h4><br><br><br></div></div>
+        <div class="col-md-4 col-xs-12 col-ms-12">    
+            <article class="post">
+          <div class="guard-of">
+          <a href="accord.html"><img class="img img-responsive" src="cms/acc.png" /></a>    
+          <h4><b>Honda Accord 2025<br> Desde MXN $504,335.00</b></h4><br><br><br></div></div>
+        <div class="col-md-4 col-xs-12 col-ms-12">    
+            <article class="post">
+          <div class="guard-of">
+          <a href="civic.html"><img class="img img-responsive" src="cms/civ.png" /></a>          
+          <h4><b>Honda civic 2025<br> Desde MXN $377,585.00 </b></h4><br><br><br></div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="honda.svg" style="max-width:150px;padding-top: 20%;">
+        </div>
+        <div class="col-sm-3" style="text-align:center;padding-top: 5px;">
+          <b>
+            <br><a href="aviso.html" style="color:white;">Aviso de privacidad</a>
+            <br><a href="terminos.html" style="color:white;">Términos y Condiciones</a>
+            <br><a href="contacto.html" style="color:white;">Contáctanos</a>
+          </b>
+        </div>
+        <div class="col-sm-3" style="text-align:center;margin-top:5px;color:white;">
+          <br>
+          <a href="mailto:ventas@ensambladorahonda.com" style="color:white;">
+            ventas@ensambladorahonda.com
+          </a>
+          <br>
+          <b>Whatsapp:</b> 33 2101 4178<br>
+          <b>Teléfono:</b> 55 9317 8433<br><br>
+          <p>
+            Parque Industrial, Carretera a El Castillo 7250,
+            45680 El Salto, Jalisco, México
+          </p>
+        </div>
+        <div class="col-sm-4" style="text-align:center;">
+          <img src="mm.png" style="max-width:250px;padding-top:10%;">
+        </div>
+      </div>
+    </div>
+    <div class="payment-bar">
+      <img src="visa.png">
+      <img src="master.png">
+      <img src="spei.png">
+      <img src="oxxo.png">
+    </div>
+    <nav style="background:linear-gradient(#e02b20,#670a01);color:white;text-align:center;">
+      <b>Todos los derechos reservados<br>2026</b>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="cms/assets/paginator.js"></script>
+<script src="cms/assets/paginate.js"></script>
+<script src="cms/assets/paginate-content.js"></script>
+<link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet"/>
+<script src="cms/assets/responsiveslides.js"></script>
+<div class='redes-flotantes'>
+<div class="btn-whatsapp">
+<a href="https://wa.me/message/S6MNX4S7PMGHP1">
+<img src="w.png" alt="">
+</a>
+</div>
+</body>
+</html>

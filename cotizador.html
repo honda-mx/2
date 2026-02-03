@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html class='no-js' lang='es'>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <title>Honda de Mexico</title> 
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#393C3E">
+  <link data-turbolinks-track="true" href="cms/assets/application.css" media="all" rel="stylesheet" />
+  <link rel="icon" href="favi.png">
+  <script src="cms/assets/application.js"></script>
+  <script src="cms/assets/imageReplace.js"></script>
+  <link href="css/main.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet" />
+  <script src="cms/assets/responsiveslides.js"></script> 
+
+<style>
+
+.caracteristicas-linea{
+  font-size: 16px;
+}
+
+.caracteristicas-linea .sep{
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+  .btn-buy {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: #670a01;
+  color: #fff;
+
+  padding: 10px 22px;
+  border-radius: 999px; /* pastilla real */
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.btn-buy i {
+  font-size: 16px;
+}
+
+.btn-buy:hover {
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-buy:active {
+  transform: translateY(0);
+}
+
+  .redes-flotantes {
+position: fixed;
+right: 8px;
+top: 90%;
+z-index: 20;
+max-width: 80px;
+
+}
+.redes-flotantes img {        max-width: 75%;
+
+float: right; clear: right;
+ margin: 5px;
+-moz-transform: scale(.8) ;
+-webkit-transform: scale(.8) ;
+-o-transform: scale(.8) ;
+-ms-transform: scale(.8) ;
+transform: scale(.8) ;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+/* =========================
+   BARRA DE PAGOS
+========================= */
+/* --- FIX BARRA DE PAGOS EN MÓVIL --- */
+.payment-bar {
+  flex-wrap: wrap;              /* permite bajar a otra línea */
+  padding: 10px 5px;
+}
+
+.payment-bar img {
+  width: 70px;                 /* más pequeño en móvil */
+  margin: 5px;
+}
+
+/* Ajuste fino solo para pantallas chicas */
+@media (max-width: 480px) {
+  .payment-bar {
+    gap: 10px;
+  }
+
+  .payment-bar img {
+    width: 60px;
+  }
+}
+
+body {
+            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            max-width: 100%;
+
+        }
+
+        h2 {
+            color: #1E3A5F;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+        }
+        input, select, buton {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        buton {
+            background-color: #1E3A5F;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        buton:hover {
+            background-color: #14273D;
+        }
+        #resultado {
+            font-size: 18px;
+            margin-top: 15px;
+            font-weight: bold;
+            background: #e8e8e8;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            text-align: left;
+              background-color: #f4f4f4;
+        }
+
+
+  a{color: white;
+
+  }
+ .container8{
+background: #4c4c4c;
+ }
+
+ body{
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+ }
+footer{
+     background:black;
+  
+    text-align: center;
+  }
+
+
+
+.container3{
+  color: white;
+  left: 50%;
+  text-align: center;
+ background: linear-gradient( #e02b20, #670a01);  
+ margin-top: 14px; 
+          
+
+}
+
+
+
+p {
+    margin: 10px 0;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 25px;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+ 
+ .navbar-brand img {
+  height: 55px;      /* AJUSTA AQUÍ */
+  width: auto;
+  max-height: none;  /* evita que Bootstrap lo aplaste */
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<body>
+ <header>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#navbarMainCollapse"
+                style="margin-top:8px;">
+          <span class="sr-only">Interruptor de Navegación</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="honda.svg" style="max-height:100px;">
+        </a>
+      </div>
+      <div id="navbarMainCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right" style="margin-top:10px;">
+          <li><a href="nosotros.html">Inicio</a></li>
+          <li><a href="index.html">Motos</a></li>
+          <li><a href="autos.html">Autos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="cotizador.html">Cotizador</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- SUB NAVBAR -->
+  <nav class="navbar-inverse sub-navbar">
+    <div class="container3">
+      <p style="margin:0;">
+        <strong style="font-size:32px;">PLANTA EL SALTO</strong>
+      </p>
+    </div>
+  </nav>
+</header>
+<div class="contenedor" width="100%" >
+  <img src="cms/lo.png"  class="img-responsive" width="100%" >
+  <div class="centrado">
+</div></div>
+
+<section class="cotizador-pro">
+  <div class="cotizador-card">
+
+    <header class="cotizador-header">
+      <h2>Cotizador de Unidades</h2>
+      <p>Calcula tu mensualidad estimada de forma rápida</p>
+    </header>
+
+    <div class="cotizador-form">
+
+      <div class="campo">
+        <label for="precio">Precio del vehículo</label>
+        <input type="number" id="precio" placeholder="$500,000">
+      </div>
+
+      <div class="campo-grid">
+        <div class="campo">
+          <label for="plazo">Plazo</label>
+          <select id="plazo">
+            <option value="1">1 año</option>
+            <option value="2">2 años</option>
+            <option value="3">3 años</option>
+            <option value="4">4 años</option>
+            <option value="5">5 años</option>
+            <option value="6">6 años</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="enganche">Enganche</label>
+          <select id="enganche">
+            <option value="10">10%</option>
+            <option value="15">15%</option>
+            <option value="20">20%</option>
+            <option value="25">25%</option>
+            <option value="30">30%</option>
+            <option value="40">40%</option>
+            <option value="50">50%</option>
+            <option value="60">60%</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="btn-pro" onclick="calcularPago()">
+        Calcular mensualidad
+      </button>
+
+    </div>
+
+    <div id="resultado" class="resultado-pro"></div>
+
+  </div>
+</section>
+
+<style>
+  .cotizador-pro {
+    background: linear-gradient(135deg, #f4f6f9, #e9edf3);
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cotizador-card {
+    background: #fff;
+    max-width: 480px;
+    width: 100%;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.12);
+  }
+
+  .cotizador-header h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+
+  .cotizador-header p {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .campo {
+    margin-bottom: 20px;
+  }
+
+  .campo label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .campo input,
+  .campo select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    font-size: 15px;
+    transition: all .2s ease;
+  }
+
+  .campo input:focus,
+  .campo select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37,99,235,.15);
+  }
+
+  .campo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .btn-pro {
+    width: 100%;
+    padding: 14px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .2s ease;
+    margin-top: 10px;
+  }
+
+  .btn-pro:hover {
+    background: #1e40af;
+    transform: translateY(-1px);
+  }
+
+  .resultado-pro {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    font-size: 15px;
+    display: none;
+  }
+
+  .resultado-pro strong {
+    color: #111827;
+  }
+</style>
+
+<script>
+  function calcularPago() {
+    let precio = parseFloat(document.getElementById('precio').value);
+    let plazo = parseInt(document.getElementById('plazo').value);
+    let enganche = parseInt(document.getElementById('enganche').value);
+
+    if (!precio || precio <= 0) {
+      alert('Ingrese un precio válido');
+      return;
+    }
+
+    let montoEnganche = (precio * enganche) / 100;
+    let montoFinanciar = precio - montoEnganche;
+    let meses = plazo * 12;
+    let tasaInteresAnual = 0.088;
+    let tasaMensual = tasaInteresAnual / 12;
+
+    let pagoMensual = (montoFinanciar * tasaMensual) /
+      (1 - Math.pow(1 + tasaMensual, -meses));
+
+    let resultado = document.getElementById('resultado');
+    resultado.style.display = 'block';
+    resultado.innerHTML = `
+      <strong>Pago mensual estimado:</strong> $${pagoMensual.toFixed(2)}<br>
+      <strong>Enganche:</strong> $${montoEnganche.toFixed(2)}<br>
+      <strong>Monto a financiar:</strong> $${montoFinanciar.toFixed(2)}
+    `;
+  }
+</script>
+
+
+    
+</main>
+
+
+<footer>
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="honda.svg" style="max-width:150px;padding-top: 20%;">
+        </div>
+        <div class="col-sm-3" style="text-align:center;padding-top: 5px;">
+          <b>
+            <br><a href="aviso.html" style="color:white;">Aviso de privacidad</a>
+            <br><a href="terminos.html" style="color:white;">Términos y Condiciones</a>
+            <br><a href="contacto.html" style="color:white;">Contáctanos</a>
+          </b>
+        </div>
+        <div class="col-sm-3" style="text-align:center;margin-top:5px;color:white;">
+          <br>
+          <a href="mailto:ventas@ensambladorahonda.com" style="color:white;">
+            ventas@ensambladorahonda.com
+          </a>
+          <br>
+          <b>Whatsapp:</b> 33 2101 4178<br>
+          <b>Teléfono:</b> 55 9317 8433<br><br>
+          <p>
+            Parque Industrial, Carretera a El Castillo 7250,
+            45680 El Salto, Jalisco, México
+          </p>
+        </div>
+        <div class="col-sm-4" style="text-align:center;">
+          <img src="mm.png" style="max-width:250px;padding-top:10%;">
+        </div>
+      </div>
+    </div>
+    <div class="payment-bar">
+      <img src="visa.png">
+      <img src="master.png">
+      <img src="spei.png">
+      <img src="oxxo.png">
+    </div>
+    <nav style="background:linear-gradient(#e02b20,#670a01);color:white;text-align:center;">
+      <b>Todos los derechos reservados<br>2026</b>
+    </nav>
+  </div>
+</footer>
+<link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet"/>
+<script src="cms/assets/responsiveslides.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="cms/assets/paginator.js"></script>
+<script src="cms/assets/paginate.js"></script>
+<script src="cms/assets/paginate-content.js"></script>
+<link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet"/>
+<script src="cms/assets/responsiveslides.js"></script>
+<div class='redes-flotantes'>
+<div class="btn-whatsapp">
+<a href="https://wa.me/message/S6MNX4S7PMGHP1">
+<img src="w.png" alt="">
+</a>
+</div>
+</body>
+</html>

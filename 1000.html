@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html class='no-js' lang='es'>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+  <title>Honda de Mexico</title> 
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#393C3E">
+  <link data-turbolinks-track="true" href="cms/assets/application.css" media="all" rel="stylesheet" />
+  <link rel="icon" href="favi.png">
+  <script src="cms/assets/application.js"></script>
+  <script src="cms/assets/imageReplace.js"></script>
+  <link href="css/main.css">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet" />
+  <script src="cms/assets/responsiveslides.js"></script>        
+<style>
+
+
+.caracteristicas-linea{
+  font-size: 16px;
+}
+
+.caracteristicas-linea .sep{
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+  .btn-buy {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: #670a01;
+  color: #fff;
+
+  padding: 10px 22px;
+  border-radius: 999px; /* pastilla real */
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.btn-buy i {
+  font-size: 16px;
+}
+
+.btn-buy:hover {
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.btn-buy:active {
+  transform: translateY(0);
+}
+
+  .redes-flotantes {
+position: fixed;
+right: 8px;
+top: 90%;
+z-index: 20;
+max-width: 80px;
+
+}
+.redes-flotantes img {        max-width: 75%;
+
+float: right; clear: right;
+ margin: 5px;
+-moz-transform: scale(.8) ;
+-webkit-transform: scale(.8) ;
+-o-transform: scale(.8) ;
+-ms-transform: scale(.8) ;
+transform: scale(.8) ;
+-webkit-transition: all .2s ease-in-out;
+-moz-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out;
+}
+/* =========================
+   BARRA DE PAGOS
+========================= */
+/* --- FIX BARRA DE PAGOS EN MÓVIL --- */
+.payment-bar {
+  flex-wrap: wrap;              /* permite bajar a otra línea */
+  padding: 10px 5px;
+}
+
+.payment-bar img {
+  width: 70px;                 /* más pequeño en móvil */
+  margin: 5px;
+}
+
+/* Ajuste fino solo para pantallas chicas */
+@media (max-width: 480px) {
+  .payment-bar {
+    gap: 10px;
+  }
+
+  .payment-bar img {
+    width: 60px;
+  }
+}
+
+/* =========================
+   GENERALES
+========================= */
+hr {
+  border-color: black;
+}
+
+footer {
+  background: black;
+  text-align: center;
+}
+
+.container4 {
+  margin-right: 15%;
+  margin-left: 15%;
+  text-align: center;
+}
+
+.container3 {
+  color: white;
+  text-align: center;
+  background: linear-gradient(#e02b20, #670a01);
+  margin-top: 14px;
+}
+
+.container5 {
+  margin-top: 10%;
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align: center;
+}
+
+.interior h2,
+.interior h3,
+.interior h4,
+.interior p,
+.pagina h2,
+.pagina h3,
+.pagina h4,
+.pagina p {
+  margin-bottom: 17px;
+}
+
+/* =========================
+   ICONOS / CONTROLES
+========================= */
+.item-control i {
+  background: #fff;
+  color: #f00;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+.recommended-item-control i {
+  background: #bc955c;
+  color: #fff;
+  font-size: 20px;
+  padding: 4px 10px;
+}
+
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================
+   TABS
+========================= */
+.nav-tabs li.active a,
+.nav-tabs li.active a:hover,
+.nav-tabs li.active a:focus {
+  background-color: #bc955c;
+  border: 0;
+  color: #fff;
+}
+
+.nav-tabs > li > a {
+  background-color: #0c231e;
+  border: 1px solid #d5d5d5;
+  color: #fff;
+  font-size: 16px;
+}
+
+.nav > li > a:hover {
+  background-color: #eeeeee;
+}
+
+
+
+.navbar-brand {
+  padding: 5px 10px;
+  height: auto;
+}
+
+.navbar-brand img {
+  height: 55px;      /* AJUSTA AQUÍ */
+  width: auto;
+  max-height: none;  /* evita que Bootstrap lo aplaste */
+}
+
+/* =========================
+   ICONO + / − COLLAPSE (FIX REAL)
+========================= */
+/* ICONO + / − PURO CSS */
+/* ICONO + / − PURO CSS (BOOTSTRAP 3 REAL) */
+.icon-toggle {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  margin-top: 3px;
+}
+
+/* línea horizontal */
+.icon-toggle::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 14px;
+  height: 2px;
+  background: #000;
+}
+
+/* línea vertical (para +) */
+.icon-toggle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 6px;
+  width: 2px;
+  height: 14px;
+  background: #000;
+}
+
+/* ABIERTO → −  (cuando NO tiene .collapsed) */
+.panel-title a:not(.collapsed) .icon-toggle::after {
+  opacity: 0;
+}
+
+
+</style>
+       
+</head>
+<body>
+ <header>
+
+  <!-- NAVBAR PRINCIPAL -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#navbarMainCollapse"
+                style="margin-top:8px;">
+          <span class="sr-only">Interruptor de Navegación</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="index.html">
+          <img src="honda.svg" style="max-height:100px;">
+        </a>
+      </div>
+
+      <div id="navbarMainCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right" style="margin-top:10px;">
+          <li><a href="nosotros.html">Inicio</a></li>
+          <li><a href="index.html">Motos</a></li>
+          <li><a href="autos.html">Autos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="cotizador.html">Cotizador</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- SUB NAVBAR -->
+  <nav class="navbar-inverse sub-navbar">
+    <div class="container3">
+      <p style="margin:0;">
+        <strong style="font-size:32px;">PLANTA EL SALTO</strong>
+      </p>
+    </div>
+  </nav>
+
+</header>
+
+<main class="inner-page interior ficha">
+  <div class="container">
+   <div class="col-sm-12" style="text-align:center;padding-top: 20px;">    
+    
+ <br><br>
+    <div class="">
+      
+      <div class="marquee-padding">
+     
+      <section>
+      <div class="col-md-7 col-xs-12 col-sm-12 pull-left" tabindex="0">
+          
+        <div class="col-sm-12  padding-left">
+          <div class="product-details"><!--product-details-->
+            <div class="col-sm-6">
+              <div class="view-product"class="img img-responsive">
+                <img src="cms/10.png" class="img img-responsive">
+                
+              </div>
+
+
+
+              <div id="similar-product" class="carousel slide" data-ride="carousel">
+                
+                  <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                    <div class="item active">
+                      <a href="cms/1000/1.png"><img src="cms/1000/1.png"></a>
+                      </div>
+                     <div class="item ">
+                      <a href="cms/1000/1.jpg"><img src="cms/1000/1.jpg"></a>
+                    </div>              
+                     <div class="item ">
+                      <a href="cms/1000/3.jpg"><img src="cms/1000/3.jpg"></a>        
+                    </div>
+                     <div class="item ">
+                      <a href="cms/1000/4.jpg"><img src="cms/1000/4.jpg"></a>
+                    </div>
+                      <div class="item ">
+                      <a href="cms/1000/5.jpg"><img src="cms/1000/5.jpg"></a>
+                    </div>
+                     <div class="item ">
+                      <a href="cms/1000/4.jpg"><img src="cms/1000/4.jpg"></a>
+                    </div>
+
+                   
+                                  
+                  </div>
+
+                  <!-- Controls -->
+                  <a class="left item-control" href="#similar-product" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+                  </a>
+                  <a class="right item-control" href="#similar-product" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+                  </a>
+              </div>
+
+            </div>
+            <div class="col-sm-6 ">
+              <div class="product-information"><!--/product-information-->
+             <h3>CBR1000RR-R FIREBLADE 2024</h3>
+             <h6>ID:119627</h6>
+             <span><h4>MXN $354.750.00</h4></span>
+                  <button type="button" style=" background-color:#000;"> 
+                 <i class="fa-solid fa-check" style="color: white;"  >
+                       <a href="solicitud.html" style="color: #fff;font-size: 11px;">Comprar</a></i> 
+                  
+                  </button>
+                </span><p>
+                <b><br>Numero de Lote:</b> A5723
+                <b><br>Color:</b> Rojo
+                <b><br>Cilindraje:</b> 999 CC
+                                <b><br>Caballos de fuerza:</b>215 hp
+
+              </div><!--/product-information-->
+             
+              </div>
+              </div>
+              </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+      </div>
+
+      <div class="col-md-4 col-xs-12 pull-right"style="text-align:left;">
+
+
+
+ <div class="">
+         
+            <div class="panel-group category-products" id="accordian" style="margin-bottom: 10px;"><!--category-productsr-->
+             <br><br>
+  <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#mane">
+                      <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                Motor
+                    </a>
+                  </h4>
+                </div>
+                <div id="mane" class="panel-collapse collapse">
+                 
+<b>Descripción: </b>  4 tiempos, 4 cilindros en línea, DOHC, 16 válvulas 
+<br><br><b>Desplazamiento:  </b> 999 CC
+<br><br><b>Potencia máxima: </b> 215 hp / 14000 rpm
+<br><br><b>Torque: </b> 113 Nm / 12000 rpm
+<br><br><b>Transmisión:</b> 6 velocidades, tipo retorno con Qickshifter
+<br><br><b>Sistema de enfriamiento:</b> Por líquido 
+<br><br><b>Sistema de lubricación:  </b> Forzada por bomba trocoidal con cárter humedo
+<br><br><b>Capacidad de aceite de motor:  </b>3.0 lt (al drenar + cambio de filtro) / 4.0 (al desarmar)
+<br><br><b>Aceite recomendado:  </b> 4 tiempos Honda SL o Superior excluyendo aceites marcados como “Ahorro de energía” o “Conservación de recursos” / SAE: 10W-30 / JASO T 903 : MA
+                  <hr>
+                 <br><br>. 
+                </div>
+              </div>
+
+
+              
+            
+              
+                 <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#tal">
+                      <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+               Encendido
+                    </a>
+                  </h4>
+                </div>
+                <div id="tal" class="panel-collapse collapse">
+                 
+
+<b>Sistema de encendido: </b> Completamente transistorizado
+<br><br><b>Sistema de arranque: </b> Eléctrico 
+<br><br><b>Bujía std. / holgura: </b> SILMAR 10C9S (NGK) / 0.8 - 0.9 mm
+                 <hr>
+                </div>
+              </div>
+              
+<div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#susde">
+                      <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                 Suspension y frenos
+                    </a>
+                  </h4>
+                </div>
+                <div id="susde" class="panel-collapse collapse">
+              
+<b>Descripción de frenos:</b>      Electronic Combined ABS
+<br><br><b>Frenos delanteros:</b> BREMBO Stylema Hidráulico, 2 discos flotantes de 330 mm, mordazas de 4 pistones montados radialmente
+<br><br><b>Freno trasero:</b> Hidráulico, 1 disco 220 mm, mordaza de 1 pistón
+<br><br><b>Suspension delantera :</b>  Horquillas telescópicas invertidas Ölins NPX con 124 mm de carrera, con ajustes de precarga, compresión y rebotes controlados electrónicamente (Smart-EC)
+<br><br><b>Suspension trasera:</b> Unidad Pro-link Mono-amortiguada 142mm de carrera<hr>
+                </div>
+              </div>
+           
+            
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#desem">
+                      <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                Desempeño 
+                    </a>
+                  </h4>
+                </div>
+                <div id="desem" class="panel-collapse collapse">
+              
+<b>Capacidad de carga:</b> 166 kg. (Incluye peso del piloto, pasajero, carga y accesorios)
+<br><br><b>Capacidad de tanque:</b>  16.1 litros 
+               <hr>
+                </div>
+              </div>
+
+ <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordian" href="#dime">
+                      <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                      Dimensiones
+                    </a>
+                  </h4>
+                </div>
+                <div id="dime" class="panel-collapse collapse">
+<b>Largo / Ancho / Altura:</b>2,100 / 745 / 1,140 mm
+<br><br><b>Distancia entre ejes: </b> 1,460 mm
+<br><br><b>Altura del asiento: </b> 830 mm
+<br><br><b>Distancia libre al suelo:</b>  115 mm
+<br><br><b>Neumatico delantero y trasero:</b>120 / 70 ZR-17 M/C (58W) - 200 / 55 ZR-17 M/C (78W)
+<hr>
+                </div>
+              </div>
+             
+           
+            </div><!--/category-products-->
+         </div>
+         </div>  
+
+            </div>
+          </div><!--/product-details-->
+
+<h5>
+
+
+
+     
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container4">
+<p>Ninguna motocicleta conecta al piloto, la máquina y el camino como lo hace una deportiva. CBR1000RR te ofrece una aceleración inmediata, la cual, junto con el diseño de su chasis, se fusionan para formar una extensión de tu propio cuerpo. </p>
+
+</div>
+   
+
+
+
+<section id="5189" class="list-article documents">
+  <div class="container5">
+
+    <hr class="red">
+
+    <div class="row">
+
+      <!-- CB300F TWISTER -->
+      <div class="col-md-3 col-sm-6 col-xs-6">
+       <article class="post">
+          <div class="guard-of">
+            <a href="navi.html">
+              <img class="img img-responsive"
+                   src="cms/navi.png"
+                   alt="CB300F TWISTER">
+            </a>
+
+            <h4><b>NAVi 110 2024
+
+<br>$21,000</b></h4>
+          </div>
+        </article>
+      </div>
+
+      <!-- CB350 H´NESS -->
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <article class="post">
+          <div class="guard-of">
+            <a href="xr.html">
+              <img class="img img-responsive"
+                   src="cms/xr190l.png"
+                   alt="CB350 H´NESS">
+            </a>
+            <h4><b> XR 190L 2024
+
+<br>$43,393</b></h4>
+          </div>
+        </article>
+      </div>
+
+      <!-- XR300L TORNADO -->
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <article class="post">
+          <div class="guard-of">
+            <a href="dio.html">
+              <img class="img img-responsive"
+                   src="cms/dio.png"
+                   alt="XR300L TORNADO">
+            </a>
+            <h4><b>  DIO 125 2024
+<br> $30,868</b></h4>
+          </div>
+        </article>
+      </div>
+
+      <!-- CRF300F -->
+      <div class="col-md-3 col-sm-6 col-xs-6">
+        <article class="post">
+          <div class="guard-of">
+            <a href="cb190.html">
+              <img class="img img-responsive"
+                   src="cms/cb190.png"
+                   alt="CRF300F">
+            </a>
+            <h4><b>CB190R 2.0 2024
+
+ <br> $44,443</b></h4>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+</main>
+
+<footer>
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="honda.svg" style="max-width:150px;padding-top: 20%;">
+        </div>
+        <div class="col-sm-3" style="text-align:center;padding-top: 5px;">
+          <b>
+            <br><a href="aviso.html" style="color:white;">Aviso de privacidad</a>
+            <br><a href="terminos.html" style="color:white;">Términos y Condiciones</a>
+            <br><a href="contacto.html" style="color:white;">Contáctanos</a>
+          </b>
+        </div>
+        <div class="col-sm-3" style="text-align:center;margin-top:5px;color:white;">
+          <br>
+          <a href="mailto:ventas@ensambladorahonda.com" style="color:white;">
+            ventas@ensambladorahonda.com
+          </a>
+          <br>
+          <b>Whatsapp:</b> 33 2101 4178<br>
+          <b>Teléfono:</b> 55 9317 8433<br><br>
+          <p>
+            Parque Industrial, Carretera a El Castillo 7250,
+            45680 El Salto, Jalisco, México
+          </p>
+        </div>
+        <div class="col-sm-4" style="text-align:center;">
+          <img src="mm.png" style="max-width:250px;padding-top:10%;">
+        </div>
+      </div>
+    </div>
+    <div class="payment-bar">
+      <img src="visa.png">
+      <img src="master.png">
+      <img src="spei.png">
+      <img src="oxxo.png">
+    </div>
+    <nav style="background:linear-gradient(#e02b20,#670a01);color:white;text-align:center;">
+      <b>Todos los derechos reservados<br>2026</b>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="cms/assets/paginator.js"></script>
+<script src="cms/assets/paginate.js"></script>
+<script src="cms/assets/paginate-content.js"></script>
+<link href="cms/assets/responsiveslides.css" media="screen" rel="stylesheet"/>
+<script src="cms/assets/responsiveslides.js"></script>
+<div class='redes-flotantes'>
+<div class="btn-whatsapp">
+<a href="https://wa.me/message/S6MNX4S7PMGHP1">
+<img src="w.png" alt="">
+</a>
+</div>
+</body>
+</html>
