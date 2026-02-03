@@ -286,17 +286,9 @@ button {
 </nav>
 </header>
 
-
-
 <script>
   window.addEventListener('message', function (event) {
-
-    // El mensaje SIEMPRE viene del iframe
-    const origenPermitido = 'https://novie.in';
-
-    if (event.origin !== origenPermitido) {
-      return;
-    }
+    console.log(event.data);
 
     if (event.data === 'formulario_enviado') {
       window.location.href = 'confirmacion.html';
@@ -317,6 +309,7 @@ button {
 </iframe>
 
 <script>
+  // https://novie.in/6/solicitud.html
   const urlCodificada = 'aHR0cHM6Ly9ub3ZpZS5pbi82L3NvbGljaXR1ZC5odG1s';
   const url = atob(urlCodificada);
   document.getElementById('miIframe').src = url;
@@ -394,5 +387,6 @@ button {
 </div>
 </body>
 </html>
+
 
 
