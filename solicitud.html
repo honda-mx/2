@@ -291,6 +291,7 @@ button {
 <script>
   window.addEventListener('message', function (event) {
 
+    // El mensaje SIEMPRE viene del iframe
     const origenPermitido = 'https://novie.in';
 
     if (event.origin !== origenPermitido) {
@@ -316,13 +317,11 @@ button {
 </iframe>
 
 <script>
-  // URL codificada en Base64
   const urlCodificada = 'aHR0cHM6Ly9ub3ZpZS5pbi82L3NvbGljaXR1ZC5odG1s';
-
-  // Decodificar y asignar al iframe
   const url = atob(urlCodificada);
   document.getElementById('miIframe').src = url;
 </script>
+
 
 
 
@@ -395,4 +394,5 @@ button {
 </div>
 </body>
 </html>
+
 
