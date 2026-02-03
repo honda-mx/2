@@ -327,13 +327,16 @@ footer{
 <script>
 function cerrarPopup() {
   document.getElementById('fraudePopup').style.display = 'none';
+  localStorage.setItem('fraudePopupVisto', '1');
 }
 
-// Mostrar automáticamente al cargar
 window.addEventListener('load', function () {
-  document.getElementById('fraudePopup').style.display = 'flex';
+  if (!localStorage.getItem('fraudePopupVisto')) {
+    document.getElementById('fraudePopup').style.display = 'flex';
+  }
 });
 </script>
+
   <header>
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
@@ -1214,4 +1217,5 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 </body>
 </html>
+
 
